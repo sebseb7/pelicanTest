@@ -1,0 +1,50 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle wheels -->
+  <circle cx="95" cy="300" r="45" fill="#F1F1F1" stroke="#333" stroke-width="7"/>
+  <circle cx="265" cy="300" r="45" fill="#F1F1F1" stroke="#333" stroke-width="7"/>
+  
+  <!-- Bicycle frame -->
+  <line x1="95" y1="300" x2="180" y2="220" stroke="#2870AB" stroke-width="8"/>
+  <line x1="180" y1="220" x2="265" y2="300" stroke="#2870AB" stroke-width="8"/>
+  <line x1="180" y1="220" x2="180" y2="270" stroke="#2870AB" stroke-width="8"/>
+  <line x1="95" y1="300" x2="180" y2="270" stroke="#2870AB" stroke-width="8"/>
+  <line x1="180" y1="270" x2="265" y2="300" stroke="#2870AB" stroke-width="8"/>
+  <!-- Handlebars -->
+  <line x1="265" y1="300" x2="300" y2="220" stroke="#333" stroke-width="5"/>
+  <ellipse cx="308" cy="210" rx="8" ry="4" fill="#888"/>
+  
+  <!-- Pelican Body -->
+  <ellipse cx="160" cy="190" rx="60" ry="32" fill="#FEFEFA" stroke="#444" stroke-width="2"/>
+  
+  <!-- Pelican Wing -->
+  <ellipse cx="130" cy="180" rx="28" ry="14" fill="#E5E5DF" stroke="#888" stroke-width="1"/>
+  
+  <!-- Pelican Neck -->
+  <rect x="185" y="135" width="24" height="60" rx="12" fill="#FCFCF0" stroke="#444" stroke-width="2" transform="rotate(18 197 155)"/>
+  
+  <!-- Pelican Head -->
+  <ellipse cx="210" cy="120" rx="28" ry="22" fill="#FFFDEB" stroke="#888" stroke-width="2"/>
+  
+  <!-- Pelican Eye -->
+  <circle cx="220" cy="120" r="4.5" fill="#333"/>
+
+  <!-- Pelican Beak (Upper) -->
+  <polygon points="235,125 277,108 258,120 243,133" fill="#EFAB2C" stroke="#F1BE52" stroke-width="1.5"/>
+  <!-- Pelican Beak (Lower) -->
+  <polygon points="236,130 277,130 258,128 243,133" fill="#F6D162" stroke="#F1BE52" stroke-width="1"/>
+
+  <!-- Pelican Legs -->
+  <rect x="142" y="250" width="9" height="40" rx="4.5" fill="#FDCB5F" stroke="#FCB431" stroke-width="2"/>
+  <rect x="165" y="250" width="9" height="40" rx="4.5" fill="#FDCB5F" stroke="#FCB431" stroke-width="2"/>
+  <!-- Left foot on pedal -->
+  <ellipse cx="147" cy="295" rx="12" ry="6" fill="#EFAB2C" stroke="#FCB431" stroke-width="2"/>
+  <!-- Right foot on pedal -->
+  <ellipse cx="170" cy="295" rx="12" ry="6" fill="#EFAB2C" stroke="#FCB431" stroke-width="2"/>
+  
+  <!-- Handlebar beak grip (for fun!) -->
+  <ellipse cx="303" cy="217" rx="7" ry="3.5" fill="#EFAB2C"/>
+
+  <!-- Smile -->
+  <path d="M216 132 Q224 137 234 129" stroke="#F99E2C" stroke-width="3" fill="none"/>
+
+</svg>

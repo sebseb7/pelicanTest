@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#e0f7ff"/>
+  <!-- Ground -->
+  <rect y="320" width="100%" height="80" fill="#7bd389"/>
+  
+  <!-- Bicycle Wheels -->
+  <circle cx="180" cy="260" r="60" fill="none" stroke="#333" stroke-width="6"/>
+  <circle cx="360" cy="260" r="72" fill="none" stroke="#333" stroke-width="6"/>
+  
+  <!-- Bicycle Frame (stylized) -->
+  <path d="M180 260 L230 230 L300 210 L350 240 L360 260"
+        fill="none" stroke="#333" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Seat stay / back triangle -->
+  <path d="M180 260 L160 240 L140 250" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Front fork -->
+  <path d="M230 226 L260 240" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <!-- Handlebar -->
+  <path d="M350 240 L380 230 L395 235" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <!-- Pedal/crank -->
+  <circle cx="260" cy="260" r="6" fill="#333"/>
+  <line x1="260" y1="260" x2="290" y2="260" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Pelican body (stylized) -->
+  <g transform="translate(40,110)">
+    <!-- body -->
+    <path d="M150 140 C170 120, 210 110, 240 130 C250 140, 260 180, 230 210 C210 220, 170 210, 150 180 Z" fill="#ffffff" stroke="#999" stroke-width="3"/>
+    <!-- wing -->
+    <path d="M170 150 C190 150, 210 170, 200 190 C190 200, 160 190, 160 170 Z" fill="#e9f0f7" stroke="#c8d1d9" stroke-width="2"/>
+    <!-- tail -->
+    <path d="M230 210 L240 225 L230 225 Z" fill="#f0f0f0" stroke="#c8c8c8" stroke-width="2"/>
+  </g>
+
+  <!-- Pelican head and beak (on the frame near saddle) -->
+  <g transform="translate(210,150)">
+    <!-- neck -->
+    <path d="M60 70 C50 60, 60 40, 70 30" fill="none" stroke="#d9d9d9" stroke-width="6" />
+    <!-- head -->
+    <ellipse cx="80" cy="65" rx="28" ry="28" fill="#ffffff" stroke="#999" stroke-width="3"/>
+    <!-- eye -->
+    <circle cx="90" cy="60" r="4" fill="#333"/>
+    <!-- beak (long) -->
+    <path d="M108 62 L180 60 L170 86 L110 82 Z" fill="#ffd166" stroke="#d29b00" stroke-width="2"/>
+  </g>
+
+  <!-- Simple ground shadow under wheels -->
+  <ellipse cx="270" cy="300" rx="90" ry="16" fill="rgba(0,0,0,0.15)"/>
+
+</svg>

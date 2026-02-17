@@ -1,0 +1,57 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 320 200"
+    width="320"
+    height="200"
+    style="background:#f0f8ff">
+  <!-- Ground -->
+  <line x1="0" y1="180" x2="320" y2="180"
+        stroke="#8c8c8c" stroke-width="2"/>
+
+  <!-- Bicycle frame -->
+  <g id="bike" stroke="#333" stroke-width="2" fill="none">
+    <!-- Wheels -->
+    <circle cx="80"  cy="150" r="40" fill="#fff" stroke="#333"/>
+    <circle cx="240" cy="150" r="40" fill="#fff" stroke="#333"/>
+    <!-- Tire treads -->
+    <g stroke="#555" stroke-width="1">
+      <circle cx="80"  cy="150" r="45"/>
+      <circle cx="240" cy="150" r="45"/>
+    </g>
+
+    <!-- Frame triangles -->
+    <line x1="80"  y1="150" x2="150" y2="120"/>
+    <line x1="150" y1="120" x2="240" y2="150"/>
+    <line x1="80"  y1="150" x2="240" y2="150"/>
+    <line x1="150" y1="120" x2="150" y2="80"/>   <!-- seat tube -->
+    <line x1="150" y1="80"  x2="170" y2="100"/>  <!-- seat -->
+    <line x1="150" y1="120" x2="120" y2="115"/>  <!-- handle‑stem -->
+    <line x1="120" y1="115" x2="110" y2="135"/>  <!-- handlebars -->
+  </g>
+
+  <!-- Pelican body -->
+  <g id="pelican" transform="translate(130,50)">
+    <!-- Body -->
+    <ellipse cx="0"   cy="30" rx="30" ry="20" fill="#f2c87d" stroke="#333"/>
+    <!-- Tail -->
+    <polygon points="-25,40 -15,70 -5,40"
+             fill="#f2c87d" stroke="#333"/>
+    <!-- Wing -->
+    <path d="M -20 20 Q 0 0 20 20" fill="#f2c87d"
+          stroke="#333"/>
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="12" fill="#f2c87d" stroke="#333"/>
+    <!-- Bill -->
+    <polygon points="0,-15 12,-20 12,-10" fill="#ffcc00"
+             stroke="#333"/>
+    <!-- Eye -->
+    <circle cx="-4" cy="-18" r="2" fill="#000"/>
+    <!-- Legs (attached to bike seat tube) -->
+    <g stroke="#333" stroke-width="2">
+      <line x1="0"   y1="30" x2="-10" y2="50"/>
+      <line x1="-10" y1="50" x2="0"   y2="52"/> <!-- foot on pedal -->
+      <line x1="0"   y1="30" x2="10"  y2="50"/>
+      <line x1="10"  y1="50" x2="0"   y2="52"/> <!-- foot on pedal -->
+    </g>
+  </g>
+</svg>

@@ -33,6 +33,8 @@ const MODELS = [
     'openai/gpt-5.2',
     'openai/gpt-5-mini',
     'openai/gpt-5-nano',
+    'openai/gpt-5.4-mini',
+    'openai/gpt-5.4-nano',
     'openai/gpt-4.1',
     'openrouter/hunter-alpha',
     'openrouter/healer-alpha',

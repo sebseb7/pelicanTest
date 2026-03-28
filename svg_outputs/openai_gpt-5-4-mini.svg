@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="A pelican riding a bicycle">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #1f2937; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .body { fill: #f7f3e8; stroke: #1f2937; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .beak { fill: #f4b400; stroke: #1f2937; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .bike { fill: none; stroke: #111827; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .wheel { fill: none; stroke: #111827; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #ef4444; stroke: #1f2937; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="390" cy="420" rx="210" ry="22" fill="#000" opacity="0.08"/>
+
+  <!-- Bicycle -->
+  <circle class="wheel" cx="250" cy="360" r="70"/>
+  <circle class="wheel" cx="500" cy="360" r="70"/>
+  <path class="bike" d="M250 360 L335 290 L425 360 L500 360"/>
+  <path class="bike" d="M335 290 L390 290"/>
+  <path class="bike" d="M390 290 L432 250"/>
+  <path class="bike" d="M420 250 L460 250"/>
+  <path class="bike" d="M500 360 L445 290"/>
+  <path class="bike" d="M335 290 L280 290"/>
+  <path class="bike" d="M280 290 L250 360"/>
+  <path class="bike" d="M250 360 L220 360"/>
+  <path class="bike" d="M478 250 L495 235"/>
+  <path class="bike" d="M494 235 L518 235"/>
+  <circle class="accent" cx="430" cy="250" r="10"/>
+  <circle class="accent" cx="495" cy="235" r="8"/>
+
+  <!-- Pelican body -->
+  <ellipse class="body" cx="360" cy="220" rx="110" ry="80"/>
+  <path class="body" d="M270 225 C250 190, 252 160, 285 145 C315 132, 342 140, 360 160 C380 182, 380 214, 370 240 C350 268, 300 270, 270 225 Z"/>
+
+  <!-- Wing -->
+  <path class="body" d="M330 210 C300 205, 282 225, 278 250 C300 268, 332 267, 352 248 C350 228, 344 216, 330 210 Z"/>
+
+  <!-- Head and neck -->
+  <path class="body" d="M360 150 C352 110, 365 82, 392 70 C420 58, 445 74, 452 98 C458 120, 447 140, 430 155 C413 168, 387 170, 360 150 Z"/>
+  <path class="body" d="M398 145 C410 170, 411 195, 404 220 C392 224, 381 223, 372 217 C375 191, 380 167, 388 148 Z"/>
+
+  <!-- Beak -->
+  <path class="beak" d="M438 116 C498 108, 546 125, 575 150 C538 166, 494 173, 446 160 C435 151, 431 134, 438 116 Z"/>
+  <path class="beak" d="M445 158 C484 180, 523 186, 565 178 C558 195, 532 214, 496 216 C470 215, 452 205, 445 158 Z"/>
+
+  <!-- Beak pouch line -->
+  <path class="line" d="M445 157 C478 164, 520 163, 565 150"/>
+
+  <!-- Eye -->
+  <circle cx="417" cy="105" r="7" fill="#111827"/>
+  <circle cx="419" cy="103" r="2.5" fill="#ffffff"/>
+
+  <!-- Leg and feet -->
+  <path class="line" d="M350 286 L330 335"/>
+  <path class="line" d="M330 335 L300 360"/>
+  <path class="line" d="M404 286 L410 340"/>
+  <path class="line" d="M410 340 L435 360"/>
+  <path class="line" d="M300 360 L285 370"/>
+  <path class="line" d="M300 360 L305 376"/>
+  <path class="line" d="M300 360 L320 370"/>
+  <path class="line" d="M435 360 L425 376"/>
+  <path class="line" d="M435 360 L450 370"/>
+  <path class="line" d="M435 360 L440 377"/>
+
+  <!-- Tail -->
+  <path class="body" d="M262 230 C230 238, 215 260, 218 285 C240 286, 262 277, 276 258 Z"/>
+</svg>

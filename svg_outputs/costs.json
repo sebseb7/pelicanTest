@@ -23,5 +23,7 @@
   "openrouter/hunter-alpha": 0,
   "openrouter/healer-alpha": 0,
   "xiaomi/mimo-v2-pro": 0.006812586,
-  "minimax/minimax-m2.7": 0.007029396
+  "minimax/minimax-m2.7": 0.007029396,
+  "openai/gpt-5.4-mini": 0.0059229225,
+  "openai/gpt-5.4-nano": 0.002703195
 }

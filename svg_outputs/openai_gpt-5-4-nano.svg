@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <style>
+      .stroke { stroke:#1d1d1d; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke-width:3; }
+      .fill-none { fill:none; }
+      .body { fill:#f7f2e8; }
+      .beak { fill:#f0a11a; }
+      .legs { fill:#1f2937; }
+      .wheel { fill:none; stroke:#111827; stroke-width:10; }
+      .rim { fill:none; stroke:#111827; stroke-width:4; opacity:.9; }
+      .frame { fill:#2563eb; }
+      .frame2 { fill:#1d4ed8; }
+      .seat { fill:#7c2d12; }
+      .handle { fill:#111827; }
+      .shadow { fill:rgba(17,24,39,.12); }
+    </style>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse class="shadow" cx="450" cy="440" rx="260" ry="35"/>
+
+  <!-- Bicycle -->
+  <!-- Wheels -->
+  <circle class="wheel" cx="230" cy="410" r="75"/>
+  <circle class="rim" cx="230" cy="410" r="62"/>
+  <circle class="wheel" cx="640" cy="410" r="75"/>
+  <circle class="rim" cx="640" cy="410" r="62"/>
+
+  <!-- Spokes (simple) -->
+  <g stroke="#111827" stroke-width="3" opacity=".85">
+    <line x1="230" y1="335" x2="230" y2="485"/>
+    <line x1="155" y1="410" x2="305" y2="410"/>
+    <line x1="178" y1="357" x2="282" y2="463"/>
+    <line x1="282" y1="357" x2="178" y2="463"/>
+
+    <line x1="640" y1="335" x2="640" y2="485"/>
+    <line x1="565" y1="410" x2="715" y2="410"/>
+    <line x1="588" y1="357" x2="692" y2="463"/>
+    <line x1="692" y1="357" x2="588" y2="463"/>
+  </g>
+
+  <!-- Frame -->
+  <path class="frame" d="M230 410 L330 290 L520 290 L640 410" />
+  <path class="frame2" d="M330 290 L410 410" />
+  <path class="frame2" d="M520 290 L450 410" />
+
+  <!-- Down tube -->
+  <path class="frame" d="M330 290 L245 410" />
+
+  <!-- Top tube -->
+  <path class="frame2" d="M330 290 L520 290" />
+
+  <!-- Seat tube -->
+  <path class="frame2" d="M450 410 L450 315" />
+
+  <!-- Seat -->
+  <path class="seat stroke" d="M410 280 C435 275, 470 275, 505 280" fill="#7c2d12"/>
+  <path class="seat stroke" d="M405 283 C455 300, 475 300, 520 283" fill="none" opacity=".9"/>
+
+  <!-- Handlebar -->
+  <path class="handle stroke thin" d="M520 290 C540 265, 580 250, 615 245" fill="none"/>
+  <path class="handle stroke thin" d="M600 240 C610 235, 625 235, 636 242" fill="none"/>
+
+  <!-- Fork -->
+  <path class="stroke" d="M640 410 L615 245 L575 270" fill="none"/>
+
+  <!-- Crank + pedals -->
+  <circle cx="470" cy="320" r="10" fill="#111827" />
+  <line x1="470" y1="320" x2="425" y2="360" class="stroke thin" />
+  <line x1="470" y1="320" x2="520" y2="395" class="stroke thin" />
+  <rect x="410" y="362" width="30" height="14" rx="6" fill="#111827" opacity=".95"/>
+  <rect x="510" y="392" width="30" height="14" rx="6" fill="#111827" opacity=".95"/>
+
+  <!-- Pelican riding -->
+  <!-- Body -->
+  <g transform="translate(360 150)">
+    <!-- Pelican shadow -->
+    <ellipse class="shadow" cx="120" cy="360" rx="70" ry="20"/>
+
+    <!-- Legs (straddling) -->
+    <g>
+      <path class="legs stroke" d="M95 320 C92 345, 92 370, 100 390" fill="none"/>
+      <path class="legs stroke" d="M150 320 C155 345, 170 365, 190 382" fill="none"/>
+      <path class="legs stroke" d="M98 390 C110 402, 130 404, 140 392" fill="none"/>
+      <path class="legs stroke" d="M185 382 C195 396, 214 400, 220 386" fill="none"/>
+    </g>
+
+    <!-- Torso -->
+    <path class="body stroke" d="M70 250
+      C55 220, 65 185, 105 170
+      C145 155, 195 175, 215 210
+      C235 245, 220 285, 185 305
+      C145 330, 95 305, 70 250 Z" />
+
+    <!-- Belly highlight -->
+    <path d="M110 215 C130 195, 170 200, 190 225 C210 250, 205 275, 175 290
+             C145 305, 110 290, 100 260 C92 242, 95 225, 110 215 Z"
+          fill="#fffaf2" opacity=".9" />
+
+    <!-- Neck -->
+    <path class="body stroke" d="M145 165
+      C120 150, 110 125, 120 100
+      C130 75, 165 70, 180 92
+      C196 115, 185 140, 165 160" fill="none"/>
+
+    <!-- Head -->
+    <path class="body stroke" d="M170 65
+      C155 60, 140 70, 140 85
+      C140 105, 165 112, 180 102
+      C195 92, 190 70, 170 65 Z" fill="#f7f2e8"/>
+
+    <!-- Eye -->
+    <circle cx="170" cy="84" r="7" fill="#111827"/>
+    <circle cx="172" cy="82" r="2.3" fill="#fff"/>
+
+    <!-- Beak -->
+    <path class="beak stroke" d="M180 95
+      C215 105, 235 120, 250 135
+      C265 150, 255 168, 235 162
+      C215 156, 202 144, 180 127 Z" fill="#f0a11a"/>
+    <!-- Lower beak line -->
+    <path d="M210 130 C230 145, 245 155, 248 148" class="stroke thin" fill="none" opacity=".9"/>
+
+    <!-- Wings -->
+    <path class="body stroke" d="M115 240
+      C85 245, 70 270, 85 290
+      C105 318, 155 320, 190 295
+      C205 284, 205 265, 185 255
+      C165 246, 145 238, 115 240 Z" fill="#f7f2e8"/>
+    <path d="M105 265 C125 272, 150 275, 175 268" class="stroke thin" fill="none" opacity=".65"/>
+    <!-- Tail -->
+    <path class="body stroke" d="M210 295
+      C238 305, 258 330, 250 350
+      C240 372, 210 360, 195 340" fill="#f7f2e8"/>
+  </g>
+
+  <!-- Pelican hands on handle -->
+  <g transform="translate(360 150)">
+    <path d="M115 170 C95 170, 75 180, 62 200" class="stroke thin" fill="none"/>
+    <path d="M120 175 C105 175, 98 188, 105 200" class="stroke thin" fill="none"/>
+    <path d="M62 200 C55 215, 65 225, 82 230" class="stroke thin" fill="none"/>
+    <path d="M540 140" fill="none"/>
+  </g>
+
+  <!-- Front small detail: bicycle chain area -->
+  <g opacity=".95">
+    <path d="M470 320 C510 330, 545 350, 575 365" class="stroke thin" fill="none" stroke="#111827"/>
+    <path d="M470 320 C440 340, 400 360, 365 375" class="stroke thin" fill="none" stroke="#111827"/>
+  </g>
+
+</svg>

@@ -1,49 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="#e0f7ff"/>
-  <!-- Ground -->
-  <rect y="320" width="100%" height="80" fill="#7bd389"/>
-  
-  <!-- Bicycle Wheels -->
-  <circle cx="180" cy="260" r="60" fill="none" stroke="#333" stroke-width="6"/>
-  <circle cx="360" cy="260" r="72" fill="none" stroke="#333" stroke-width="6"/>
-  
-  <!-- Bicycle Frame (stylized) -->
-  <path d="M180 260 L230 230 L300 210 L350 240 L360 260"
-        fill="none" stroke="#333" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Seat stay / back triangle -->
-  <path d="M180 260 L160 240 L140 250" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Front fork -->
-  <path d="M230 226 L260 240" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
-  <!-- Handlebar -->
-  <path d="M350 240 L380 230 L395 235" fill="none" stroke="#333" stroke-width="6" stroke-linecap="round"/>
-  <!-- Pedal/crank -->
-  <circle cx="260" cy="260" r="6" fill="#333"/>
-  <line x1="260" y1="260" x2="290" y2="260" stroke="#333" stroke-width="6" stroke-linecap="round"/>
-  
-  <!-- Pelican body (stylized) -->
-  <g transform="translate(40,110)">
-    <!-- body -->
-    <path d="M150 140 C170 120, 210 110, 240 130 C250 140, 260 180, 230 210 C210 220, 170 210, 150 180 Z" fill="#ffffff" stroke="#999" stroke-width="3"/>
-    <!-- wing -->
-    <path d="M170 150 C190 150, 210 170, 200 190 C190 200, 160 190, 160 170 Z" fill="#e9f0f7" stroke="#c8d1d9" stroke-width="2"/>
-    <!-- tail -->
-    <path d="M230 210 L240 225 L230 225 Z" fill="#f0f0f0" stroke="#c8c8c8" stroke-width="2"/>
+<svg width="600" height="360" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pelican riding a bicycle">
+  <defs>
+    <style>
+      .frame{fill:none; stroke:#333; stroke-width:5; stroke-linecap:round; stroke-linejoin:round}
+      .wheels{fill:none; stroke:#333; stroke-width:6}
+      .pelican-body{fill:#fff; stroke:#333; stroke-width:2}
+      .beak{fill:#f4a300; stroke:#333; stroke-width:2}
+    </style>
+  </defs>
+
+  <!-- Wheels -->
+  <circle class="wheels" cx="120" cy="260" r="60"/>
+  <circle class="wheels" cx="360" cy="260" r="60"/>
+
+  <!-- Frame -->
+  <g class="frame">
+    <line x1="150" y1="190" x2="190" y2="260" />
+    <line x1="150" y1="190" x2="320" y2="170" />
+    <line x1="190" y1="260" x2="320" y2="170" />
+    <line x1="190" y1="260" x2="120" y2="260" />
+    <line x1="150" y1="190" x2="120" y2="260" />
+    <line x1="320" y1="170" x2="360" y2="260" />
+    <line x1="320" y1="170" x2="340" y2="150" />
+    <line x1="340" y1="150" x2="360" y2="160" />
   </g>
 
-  <!-- Pelican head and beak (on the frame near saddle) -->
-  <g transform="translate(210,150)">
-    <!-- neck -->
-    <path d="M60 70 C50 60, 60 40, 70 30" fill="none" stroke="#d9d9d9" stroke-width="6" />
-    <!-- head -->
-    <ellipse cx="80" cy="65" rx="28" ry="28" fill="#ffffff" stroke="#999" stroke-width="3"/>
-    <!-- eye -->
-    <circle cx="90" cy="60" r="4" fill="#333"/>
-    <!-- beak (long) -->
-    <path d="M108 62 L180 60 L170 86 L110 82 Z" fill="#ffd166" stroke="#d29b00" stroke-width="2"/>
+  <!-- Pelican perched on seat (left of center) -->
+  <g>
+    <!-- Body -->
+    <ellipse class="pelican-body" cx="140" cy="190" rx="28" ry="20" fill="#ffffff" stroke="#333" stroke-width="2"/>
+    <!-- Neck and head -->
+    <path d="M130,180 C110,170 102,184 98,190" fill="none" stroke="#333" stroke-width="3" />
+    <circle cx="118" cy="172" r="10" fill="#ffffff" stroke="#333" stroke-width="2"/>
+    <circle cx="112" cy="170" r="3" fill="#000"/>
+    <!-- Beak -->
+    <polygon points="90,176 118,182 90,196" class="beak"/>
+    <!-- Wing -->
+    <path d="M112 188 C 132 190, 144 198, 132 206 C 122 208, 108 202, 112 188" fill="#ffffff" stroke="#333" stroke-width="2" />
   </g>
-
-  <!-- Simple ground shadow under wheels -->
-  <ellipse cx="270" cy="300" rx="90" ry="16" fill="rgba(0,0,0,0.15)"/>
-
 </svg>

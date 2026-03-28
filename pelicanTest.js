@@ -28,10 +28,16 @@ const MODELS = [
     'anthropic/claude-opus-4.5',
     'openai/gpt-5.2-codex',
     'deepseek/deepseek-v3.2',
+    'openai/gpt-5.4-pro',
+    'openai/gpt-5.4',
     'openai/gpt-5.2',
     'openai/gpt-5-mini',
     'openai/gpt-5-nano',
-    'openai/gpt-4.1'
+    'openai/gpt-4.1',
+    'openrouter/hunter-alpha',
+    'openrouter/healer-alpha',
+    'xiaomi/mimo-v2-pro',
+    'minimax/minimax-m2.7'
 ];
 
 // Ensure output directory exists
@@ -137,7 +143,7 @@ async function runTest() {
 
             // Note on logFile: OpenRouterClient accepts a filename (relative or absolute).
             // We pass the absolute path we constructed above.
-            const response = await client.complete(null, messages, model, 6000, undefined, logFile);
+            const response = await client.complete(null, messages, model, 12000, undefined, logFile);
 
             if (!response || !response.usage) {
                 // If complete() returns empty without error

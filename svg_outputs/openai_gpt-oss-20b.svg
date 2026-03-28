@@ -1,36 +1,30 @@
 <svg
-    width="400" height="300"
-    viewBox="0 0 400 300"
+    width="250"
+    height="250"
+    viewBox="0 0 250 250"
     xmlns="http://www.w3.org/2000/svg">
-
   <!-- Bicycle -->
-  <g id="bicycle" stroke="#333" stroke-width="4" fill="none">
-    <!-- Two wheels -->
-    <circle cx="100" cy="240" r="40"/>
-    <circle cx="280" cy="240" r="40"/>
-    <!-- Frame -->
-    <path d="M100 240 L50 180 L170 180 L120 240"/>
-    <!-- Seat, chain, handlebars (simplified) -->
-    <path d="M120 220 L130 210 L140 220" fill="#777"/>
-    <path d="M150 180 L160 190 L160 180" stroke="#777" stroke-width="2"/>
-    <path d="M150 180 L150 140 L200 140" stroke="#777" stroke-width="2"/>
-  </g>
+  <circle cx="80" cy="150" r="30" fill="#666" stroke="#333" stroke-width="3"/>
+  <circle cx="170" cy="150" r="30" fill="#666" stroke="#333" stroke-width="3"/>
+  <path d="M110 140 L140 140 L140 130 L110 130 Z"
+        fill="#999" stroke="#333" stroke-width="2"/>
+  <path d="M82 144 L175 144"
+        stroke="#333" stroke-width="4" stroke-linecap="round"/>
 
   <!-- Pelican -->
-  <g id="pelican" fill="#fafafa" stroke="#333" stroke-width="2">
-    <!-- Body -->
-    <ellipse cx="200" cy="140" rx="40" ry="50"/>
-    <!-- Head -->
-    <ellipse cx="200" cy="90" rx="30" ry="35"/>
-    <!-- Beak -->
-    <polygon points="200,100 235,115 235,95"/>
-    <!-- Wings -->
-    <path d="M160 140 Q140 160 160 170" fill="#ddd"/>
-    <path d="M240 140 Q260 160 240 170" fill="#ddd"/>
-    <!-- Tail -->
-    <path d="M200 190 L220 210 L180 210 Z" fill="#ccc"/>
-    <!-- Legs -->
-    <line x1="190" y1="190" x2="190" y2="220" stroke="#333" stroke-width="4"/>
-    <line x1="210" y1="190" x2="210" y2="220" stroke="#333" stroke-width="4"/>
-  </g>
+  <!-- Body -->
+  <ellipse cx="140" cy="115" rx="25" ry="35" fill="#fff" stroke="#777" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="140" cy="75" r="15" fill="#fff" stroke="#777" stroke-width="2"/>
+  <!-- Beak -->
+  <polygon points="140,75 158,80 140,85" fill="#ffd700" stroke="#777" stroke-width="1"/>
+  <!-- Eye -->
+  <circle cx="138" cy="70" r="2" fill="#000"/>
+  <!-- Wing -->
+  <path d="M115,120 Q125,95 140,120" fill="none" stroke="#777" stroke-width="2"/>
+  <!-- Tail -->
+  <path d="M115,155 L140,140 L115,140 Z" fill="#fff" stroke="#777" stroke-width="1"/>
+  <!-- Feet -->
+  <line x1="145" y1="150" x2="145" y2="165" stroke="#777" stroke-width="3"/>
+  <line x1="155" y1="150" x2="155" y2="165" stroke="#777" stroke-width="3"/>
 </svg>

@@ -1,50 +1,34 @@
-<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
-  <!-- Bicycle wheels -->
-  <circle cx="95" cy="300" r="45" fill="#F1F1F1" stroke="#333" stroke-width="7"/>
-  <circle cx="265" cy="300" r="45" fill="#F1F1F1" stroke="#333" stroke-width="7"/>
-  
-  <!-- Bicycle frame -->
-  <line x1="95" y1="300" x2="180" y2="220" stroke="#2870AB" stroke-width="8"/>
-  <line x1="180" y1="220" x2="265" y2="300" stroke="#2870AB" stroke-width="8"/>
-  <line x1="180" y1="220" x2="180" y2="270" stroke="#2870AB" stroke-width="8"/>
-  <line x1="95" y1="300" x2="180" y2="270" stroke="#2870AB" stroke-width="8"/>
-  <line x1="180" y1="270" x2="265" y2="300" stroke="#2870AB" stroke-width="8"/>
-  <!-- Handlebars -->
-  <line x1="265" y1="300" x2="300" y2="220" stroke="#333" stroke-width="5"/>
-  <ellipse cx="308" cy="210" rx="8" ry="4" fill="#888"/>
-  
-  <!-- Pelican Body -->
-  <ellipse cx="160" cy="190" rx="60" ry="32" fill="#FEFEFA" stroke="#444" stroke-width="2"/>
-  
-  <!-- Pelican Wing -->
-  <ellipse cx="130" cy="180" rx="28" ry="14" fill="#E5E5DF" stroke="#888" stroke-width="1"/>
-  
-  <!-- Pelican Neck -->
-  <rect x="185" y="135" width="24" height="60" rx="12" fill="#FCFCF0" stroke="#444" stroke-width="2" transform="rotate(18 197 155)"/>
-  
-  <!-- Pelican Head -->
-  <ellipse cx="210" cy="120" rx="28" ry="22" fill="#FFFDEB" stroke="#888" stroke-width="2"/>
-  
-  <!-- Pelican Eye -->
-  <circle cx="220" cy="120" r="4.5" fill="#333"/>
+<svg viewBox="0 0 320 230" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wheels -->
+  <circle cx="75" cy="180" r="35" fill="#fff" stroke="#222" stroke-width="5"/>
+  <circle cx="205" cy="180" r="35" fill="#fff" stroke="#222" stroke-width="5"/>
 
-  <!-- Pelican Beak (Upper) -->
-  <polygon points="235,125 277,108 258,120 243,133" fill="#EFAB2C" stroke="#F1BE52" stroke-width="1.5"/>
-  <!-- Pelican Beak (Lower) -->
-  <polygon points="236,130 277,130 258,128 243,133" fill="#F6D162" stroke="#F1BE52" stroke-width="1"/>
+  <!-- Frame -->
+  <line x1="75" y1="180" x2="140" y2="120" stroke="#4e79a7" stroke-width="8"/>
+  <line x1="205" y1="180" x2="140" y2="120" stroke="#4e79a7" stroke-width="8"/>
+  <line x1="75" y1="180" x2="205" y2="180" stroke="#4e79a7" stroke-width="6"/>
+  <line x1="140" y1="120" x2="160" y2="50" stroke="#4e79a7" stroke-width="5"/>
+
+  <!-- Handlebar -->
+  <line x1="160" y1="50" x2="210" y2="65" stroke="#444" stroke-width="4"/>
+  <circle cx="210" cy="65" r="6" fill="#ccc" stroke="#444" stroke-width="2"/>
+
+  <!-- Pelican Body -->
+  <ellipse cx="135" cy="80" rx="35" ry="22" fill="#fff" stroke="#222" stroke-width="2"/>
+  <!-- Pelican Head -->
+  <ellipse cx="115" cy="56" rx="18" ry="15" fill="#fff" stroke="#222" stroke-width="2"/>
+  <!-- Eye -->
+  <circle cx="107" cy="55" r="2.5" fill="#000"/>
+  <!-- Beak -->
+  <polygon points="95,58 77,62 110,62" fill="#ffd700" stroke="#222" stroke-width="2"/>
+  <polygon points="75,62 110,65 80,70" fill="#ffd700" opacity="0.7"/>
+  <!-- Wing -->
+  <ellipse cx="150" cy="85" rx="15" ry="9" fill="#d5e1e6" stroke="#222" stroke-width="1.5"/>
 
   <!-- Pelican Legs -->
-  <rect x="142" y="250" width="9" height="40" rx="4.5" fill="#FDCB5F" stroke="#FCB431" stroke-width="2"/>
-  <rect x="165" y="250" width="9" height="40" rx="4.5" fill="#FDCB5F" stroke="#FCB431" stroke-width="2"/>
-  <!-- Left foot on pedal -->
-  <ellipse cx="147" cy="295" rx="12" ry="6" fill="#EFAB2C" stroke="#FCB431" stroke-width="2"/>
-  <!-- Right foot on pedal -->
-  <ellipse cx="170" cy="295" rx="12" ry="6" fill="#EFAB2C" stroke="#FCB431" stroke-width="2"/>
-  
-  <!-- Handlebar beak grip (for fun!) -->
-  <ellipse cx="303" cy="217" rx="7" ry="3.5" fill="#EFAB2C"/>
-
-  <!-- Smile -->
-  <path d="M216 132 Q224 137 234 129" stroke="#F99E2C" stroke-width="3" fill="none"/>
-
+  <rect x="145" y="125" width="5" height="35" rx="2" fill="#ffd700" stroke="#222" stroke-width="1"/>
+  <rect x="125" y="135" width="5" height="30" rx="2" fill="#ffd700" stroke="#222" stroke-width="1"/>
+  <!-- Feet -->
+  <ellipse cx="147" cy="158" rx="7" ry="3" fill="#ffd700" stroke="#222" stroke-width="1"/>
+  <ellipse cx="127" cy="163" rx="7" ry="3" fill="#ffd700" stroke="#222" stroke-width="1"/>
 </svg>

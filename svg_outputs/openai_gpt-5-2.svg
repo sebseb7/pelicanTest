@@ -1,103 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="450" viewBox="0 0 900 450">
   <defs>
     <style>
-      .line{fill:none;stroke:#1b1b1b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
-      .thin{fill:none;stroke:#1b1b1b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
-      .fill{fill:#f7f3ea;stroke:#1b1b1b;stroke-width:6;stroke-linejoin:round}
-      .beak{fill:#f2b24c;stroke:#1b1b1b;stroke-width:6;stroke-linejoin:round}
-      .accent{fill:#d9eef7;stroke:#1b1b1b;stroke-width:6;stroke-linejoin:round}
+      .line { fill: none; stroke: #1b1b1b; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #1b1b1b; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .white { fill: #ffffff; stroke: #1b1b1b; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
     </style>
   </defs>
 
-  <!-- sky -->
-  <rect x="0" y="0" width="800" height="500" fill="#ffffff"/>
-  <path d="M40 120 C120 70, 200 70, 280 120" class="thin"/>
-  <path d="M520 105 C600 65, 680 65, 760 105" class="thin"/>
+  <!-- ground -->
+  <path class="thin" d="M40 360 H860" opacity="0.25"/>
 
   <!-- bicycle wheels -->
-  <circle cx="230" cy="380" r="85" class="line"/>
-  <circle cx="580" cy="380" r="85" class="line"/>
-  <circle cx="230" cy="380" r="8" fill="#1b1b1b"/>
-  <circle cx="580" cy="380" r="8" fill="#1b1b1b"/>
+  <circle class="line" cx="240" cy="330" r="85"/>
+  <circle class="line" cx="660" cy="330" r="85"/>
+  <circle class="thin" cx="240" cy="330" r="10"/>
+  <circle class="thin" cx="660" cy="330" r="10"/>
 
   <!-- spokes -->
-  <g class="thin" opacity="0.9">
-    <path d="M230 295 L230 465"/>
-    <path d="M145 380 L315 380"/>
-    <path d="M170 320 L290 440"/>
-    <path d="M170 440 L290 320"/>
-
-    <path d="M580 295 L580 465"/>
-    <path d="M495 380 L665 380"/>
-    <path d="M520 320 L640 440"/>
-    <path d="M520 440 L640 320"/>
+  <g class="thin" opacity="0.65">
+    <!-- left -->
+    <path d="M240 245 V415"/>
+    <path d="M155 330 H325"/>
+    <path d="M185 275 L295 385"/>
+    <path d="M295 275 L185 385"/>
+    <!-- right -->
+    <path d="M660 245 V415"/>
+    <path d="M575 330 H745"/>
+    <path d="M605 275 L715 385"/>
+    <path d="M715 275 L605 385"/>
   </g>
 
-  <!-- bike frame -->
-  <path d="M230 380 L340 305 L580 380 L365 380 Z" class="line"/>
-  <path d="M340 305 L405 240" class="line"/>
-  <path d="M405 240 L475 240" class="line"/>
-  <path d="M365 380 L405 240" class="line"/>
-  <path d="M580 380 L475 240" class="line"/>
+  <!-- frame -->
+  <g class="line">
+    <!-- main triangle -->
+    <path d="M240 330 L420 330 L520 250 L360 250 Z"/>
+    <!-- rear stay -->
+    <path d="M360 250 L240 330"/>
+    <!-- fork -->
+    <path d="M520 250 L660 330"/>
+    <!-- top tube extension to handlebars -->
+    <path d="M520 250 L580 210"/>
+    <!-- seat tube -->
+    <path d="M360 250 L360 200"/>
+  </g>
 
-  <!-- handlebar and seat -->
-  <path d="M475 240 L520 205" class="line"/>
-  <path d="M520 205 L555 220" class="line"/>
-  <path d="M520 205 L490 190" class="line"/>
-  <path d="M390 255 L340 255" class="line"/>
-  <path d="M340 255 L325 240" class="line"/>
-  <path d="M340 255 L355 240" class="line"/>
+  <!-- seat & handlebars -->
+  <g class="line">
+    <path d="M330 200 H390"/>
+    <path d="M565 210 L610 185"/>
+    <path d="M605 185 H640"/>
+  </g>
 
-  <!-- crank and pedals -->
-  <circle cx="365" cy="380" r="22" class="line"/>
-  <path d="M365 380 L395 360" class="line"/>
-  <path d="M395 360 L430 360" class="line"/>
-  <path d="M365 380 L335 405" class="line"/>
-  <path d="M335 405 L300 405" class="line"/>
+  <!-- crank -->
+  <g class="line">
+    <circle cx="420" cy="330" r="18"/>
+    <path d="M420 330 L455 305"/>
+    <path d="M420 330 L392 365"/>
+  </g>
 
-  <!-- pelican body -->
-  <ellipse cx="360" cy="250" rx="95" ry="70" class="fill"/>
-  <path d="M295 255 C310 295, 345 330, 395 335 C445 340, 470 315, 485 290
-           C455 295, 430 285, 408 265
-           C385 245, 350 235, 320 240 Z" class="accent"/>
-
+  <!-- pelican -->
+  <!-- body -->
+  <ellipse class="white" cx="420" cy="205" rx="120" ry="85"/>
   <!-- wing -->
-  <path d="M320 270 C290 295, 290 335, 330 350
-           C385 370, 440 340, 455 300
-           C420 320, 380 320, 350 300
-           C335 290, 328 280, 320 270 Z" class="fill"/>
-
+  <path class="white" d="M360 215 C320 210, 300 240, 318 270 C350 320, 430 305, 468 262 C492 236, 442 222, 410 220" />
   <!-- neck -->
-  <path d="M405 215 C420 190, 455 175, 490 178
-           C460 190, 450 205, 450 230
-           C440 235, 420 230, 405 215 Z" class="fill"/>
-
+  <path class="white" d="M485 170 C540 120, 585 120, 610 150 C630 175, 600 205, 565 205 C535 205, 515 195, 500 185"/>
   <!-- head -->
-  <circle cx="515" cy="185" r="45" class="fill"/>
+  <circle class="white" cx="630" cy="155" r="48"/>
+  <!-- eye -->
+  <circle cx="645" cy="150" r="7" fill="#1b1b1b"/>
+  <circle cx="647" cy="148" r="2.5" fill="#ffffff"/>
 
   <!-- beak -->
-  <path d="M540 190 C600 185, 670 205, 720 225
-           C655 245, 595 248, 540 235 Z" class="beak"/>
-  <path d="M535 210 C595 205, 660 222, 705 237
-           C650 252, 595 250, 540 240 Z" fill="#f6cf7a" stroke="#1b1b1b" stroke-width="6" stroke-linejoin="round"/>
+  <path class="white" d="M650 170 C700 175, 780 190, 820 205 C780 232, 700 235, 650 225 Z"/>
+  <!-- pouch line -->
+  <path class="thin" d="M650 225 C705 240, 770 240, 820 205"/>
 
-  <!-- eye -->
-  <circle cx="520" cy="175" r="7" fill="#1b1b1b"/>
-  <path d="M505 165 C512 155, 528 155, 535 165" class="thin"/>
+  <!-- pelican legs to pedals -->
+  <g class="line">
+    <!-- left leg -->
+    <path d="M400 275 C390 300, 388 320, 392 365"/>
+    <path d="M392 365 L372 385"/>
+    <!-- right leg -->
+    <path d="M448 275 C462 295, 470 305, 455 305"/>
+    <path d="M455 305 L475 285"/>
+  </g>
 
-  <!-- pelican legs on pedals -->
-  <path d="M350 305 C340 330, 340 355, 360 375" class="line"/>
-  <path d="M360 375 C372 388, 388 382, 395 360" class="line"/>
+  <!-- little scarf (optional flair) -->
+  <path class="thin" d="M592 185 C565 205, 530 210, 500 198" opacity="0.85"/>
 
-  <path d="M390 310 C405 335, 405 360, 392 382" class="line"/>
-  <path d="M392 382 C380 402, 355 402, 335 405" class="line"/>
-
-  <!-- little scarf for fun -->
-  <path d="M465 210 C485 225, 500 235, 520 242
-           C500 245, 480 245, 462 235 Z" fill="#ff6b6b" stroke="#1b1b1b" stroke-width="6" stroke-linejoin="round"/>
-  <path d="M460 235 C470 250, 480 265, 475 282
-           C455 268, 445 252, 440 235 Z" fill="#ff6b6b" stroke="#1b1b1b" stroke-width="6" stroke-linejoin="round"/>
-
-  <!-- ground -->
-  <path d="M60 445 C180 420, 300 420, 420 445 C540 470, 660 470, 780 445" class="thin"/>
 </svg>

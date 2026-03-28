@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#E0F0FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="350" fill="url(#sky)"/>
+
+  <!-- Ground -->
+  <rect x="0" y="280" width="400" height="70" fill="#7CB342"/>
+  <ellipse cx="200" cy="285" rx="220" ry="8" fill="#8BC34A"/>
+
+  <!-- Road -->
+  <rect x="0" y="270" width="400" height="30" fill="#9E9E9E"/>
+  <rect x="0" y="283" width="400" height="4" fill="#FFEB3B"/>
+
+  <!-- Bicycle Frame -->
+  <g stroke="#333" stroke-width="4" fill="none">
+    <!-- Rear wheel spoke hub -->
+    <circle cx="100" cy="255" r="35"/>
+    <circle cx="100" cy="255" r="4" fill="#333"/>
+    <!-- Front wheel -->
+    <circle cx="280" cy="255" r="35"/>
+    <circle cx="280" cy="255" r="4" fill="#333"/>
+    <!-- Frame -->
+    <path d="M100,255 L160,220 L160,255 Z"/>
+    <line x1="160" y1="220" x2="280" y2="255"/>
+    <line x1="160" y1="255" x2="280" y2="255"/>
+    <!-- Handlebar -->
+    <path d="M265,230 L280,255"/>
+    <path d="M260,220 L275,245" stroke-width="3"/>
+    <circle cx="258" cy="218" r="3" fill="#333" stroke="none"/>
+    <!-- Seat post -->
+    <line x1="155" y1="210" x2="160" y2="220"/>
+    <!-- Seat -->
+    <ellipse cx="150" cy="208" rx="15" ry="4" fill="#5D4037" stroke="#4E342E" stroke-width="2"/>
+    <!-- Pedals -->
+    <circle cx="140" cy="255" r="12" stroke-width="3"/>
+    <rect x="132" y="252" width="8" height="6" rx="2" fill="#333" stroke="none" transform="rotate(-20, 136, 255)"/>
+    <!-- Spokes rear -->
+    <g stroke-width="1" opacity="0.5">
+      <line x1="100" y1="220" x2="100" y2="290"/>
+      <line x1="65" y1="255" x2="135" y2="255"/>
+      <line x1="75" y1="230" x2="125" y2="280"/>
+      <line x1="75" y1="280" x2="125" y2="230"/>
+    </g>
+    <!-- Spokes front -->
+    <g stroke-width="1" opacity="0.5">
+      <line x1="280" y1="220" x2="280" y2="290"/>
+      <line x1="245" y1="255" x2="315" y2="255"/>
+      <line x1="255" y1="230" x2="305" y2="280"/>
+      <line x1="255" y1="280" x2="305" y2="230"/>
+    </g>
+  </g>
+
+  <!-- Pelican Body -->
+  <ellipse cx="165" cy="175" rx="35" ry="28" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Pelican Wing -->
+  <path d="M140,170 Q120,155 130,140 Q140,150 145,165" fill="#EEEEEE" stroke="#E0E0E0" stroke-width="1"/>
+  <path d="M135,165 Q115,150 125,135" stroke="#BDBDBD" stroke-width="1" fill="none"/>
+
+  <!-- Pelican Neck -->
+  <path d="M175,165 Q185,145 180,125" stroke="#F5F5F5" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M175,165 Q185,145 180,125" stroke="#EEEEEE" stroke-width="14" fill="none" stroke-linecap="round"/>
+
+  <!-- Pelican Head -->
+  <circle cx="182" cy="110" r="16" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Pelican Eye -->
+  <circle cx="188" cy="107" r="4" fill="#333"/>
+  <circle cx="189.5" cy="105.5" r="1.5" fill="white"/>
+
+  <!-- Pelican Beak (top) -->
+  <path d="M196,108 L230,105 L225,112 Z" fill="#FF8F00" stroke="#E65100" stroke-width="1"/>
+
+  <!-- Pelican Beak (pouch) -->
+  <path d="M196,112 Q215,130 225,120 L225,112 Z" fill="#FFAB40" stroke="#E65100" stroke-width="1"/>
+  <path d="M196,112 Q210,125 220,118" fill="none" stroke="#E65100" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Pelican Legs -->
+  <g stroke="#333" stroke-width="3" stroke-linecap="round">
+    <path d="M155,198 L140,230"/>
+    <path d="M175,198 L165,230"/>
+  </g>
+  <!-- Feet -->
+  <g stroke="#FF8F00" stroke-width="2.5" stroke-linecap="round">
+    <path d="M135,232 L140,230 L145,232"/>
+    <path d="M160,232 L165,230 L170,232"/>
+  </g>
+
+  <!-- Pelican belly highlight -->
+  <ellipse cx="168" cy="180" rx="15" ry="10" fill="white" opacity="0.4"/>
+
+  <!-- Sunglasses (fun touch) -->
+  <g>
+    <rect x="182" y="103" width="10" height="7" rx="2" fill="#333" opacity="0.85"/>
+    <rect x="193" y="103" width="8" height="7" rx="2" fill="#333" opacity="0.85"/>
+    <line x1="192" y1="106.5" x2="193" y2="106.5" stroke="#333" stroke-width="1.5"/>
+    <path d="M182,106.5 L175,104" stroke="#333" stroke-width="1.5"/>
+    <path d="M201,106.5 L208,105" stroke="#333" stroke-width="1.5"/>
+  </g>
+
+  <!-- Speech bubble -->
+  <g>
+    <rect x="240" y="60" width="110" height="40" rx="20" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="240,85 225,95 250,85" fill="white" stroke="#333" stroke-width="2"/>
+    <polygon points="242,84 228,92 248,84" fill="white"/>
+    <text x="295" y="85" text-anchor="middle" font-family="Comic Sans MS, cursive" font-size="14" font-weight="bold" fill="#333">Wheee!</text>
+  </g>
+
+  <!-- Small clouds -->
+  <g fill="white" opacity="0.8">
+    <ellipse cx="50" cy="50" rx="25" ry="12"/>
+    <ellipse cx="65" cy="45" rx="18" ry="10"/>
+    <ellipse cx="40" cy="47" rx="15" ry="9"/>
+
+    <ellipse cx="340" cy="40" rx="20" ry="10"/>
+    <ellipse cx="355" cy="36" rx="15" ry="8"/>
+    <ellipse cx="330" cy="38" rx="12" ry="7"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="350" cy="60" r="25" fill="#FFD54F"/>
+  <circle cx="350" cy="60" r="20" fill="#FFEB3B"/>
+</svg>

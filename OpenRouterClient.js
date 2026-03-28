@@ -35,13 +35,7 @@ class OpenRouterClient {
             input: prompt,
             maxOutputTokens: max_tokens,
             provider: { require_parameters: true },
-            previousResponseId: previousResponseId,
-            reasoning: { effort: 'low', max_tokens: max_tokens / 2 } /*xhigh
-high
-medium
-low
-minimal
-none*/
+            previousResponseId: previousResponseId
         };
 
         // Add text format if provided (for structured output)

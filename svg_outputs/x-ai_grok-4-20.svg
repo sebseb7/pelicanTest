@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bicycle -->
+  <!-- Rear wheel -->
+  <circle cx="120" cy="220" r="45" fill="none" stroke="#2C3E50" stroke-width="12"/>
+  <circle cx="120" cy="220" r="30" fill="none" stroke="#34495E" stroke-width="8"/>
+  <!-- Front wheel -->
+  <circle cx="280" cy="220" r="45" fill="none" stroke="#2C3E50" stroke-width="12"/>
+  <circle cx="280" cy="220" r="30" fill="none" stroke="#34495E" stroke-width="8"/>
+  
+  <!-- Bike frame -->
+  <line x1="120" y1="220" x2="200" y2="140" stroke="#E74C3C" stroke-width="18" stroke-linecap="round"/>
+  <line x1="200" y1="140" x2="280" y2="220" stroke="#E74C3C" stroke-width="18" stroke-linecap="round"/>
+  <line x1="160" y1="190" x2="255" y2="140" stroke="#E74C3C" stroke-width="18" stroke-linecap="round"/>
+  
+  <!-- Handlebars -->
+  <line x1="255" y1="140" x2="270" y2="95" stroke="#2C3E50" stroke-width="12" stroke-linecap="round"/>
+  <line x1="270" y1="95" x2="295" y2="85" stroke="#2C3E50" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Seat -->
+  <ellipse cx="175" cy="125" rx="25" ry="8" fill="#2C3E50" transform="rotate(-15 175 125)"/>
+  
+  <!-- Pelican -->
+  <!-- Body -->
+  <ellipse cx="195" cy="95" rx="45" ry="35" fill="#ECF0F1" transform="rotate(-10 195 95)"/>
+  
+  <!-- Head -->
+  <circle cx="235" cy="65" r="22" fill="#ECF0F1"/>
+  
+  <!-- Beak -->
+  <polygon points="255,65 290,55 255,80" fill="#FF9F1C"/>
+  <polygon points="255,65 285,58 255,72" fill="#FFBB4A"/>
+  
+  <!-- Eye -->
+  <circle cx="245" cy="60" r="6" fill="#2C3E50"/>
+  <circle cx="247" cy="58" r="2" fill="#ECF0F1"/>
+  
+  <!-- Wing -->
+  <path d="M165 85 Q130 65 115 95 Q135 120 165 105" fill="#BDC6D0"/>
+  
+  <!-- Legs -->
+  <line x1="195" y1="125" x2="185" y2="175" stroke="#FF9F1C" stroke-width="8" stroke-linecap="round"/>
+  <line x1="215" y1="125" x2="225" y2="175" stroke="#FF9F1C" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Feet on pedals -->
+  <ellipse cx="175" cy="178" rx="8" ry="4" fill="#FF8C00" transform="rotate(-30 175 178)"/>
+  <ellipse cx="235" cy="175" rx="8" ry="4" fill="#FF8C00" transform="rotate(25 235 175)"/>
+  
+  <!-- Happy little wind lines -->
+  <path d="M50 60 Q30 55 15 58" fill="none" stroke="#74B9FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 75 Q25 72 10 77" fill="none" stroke="#74B9FF" stroke-width="3" stroke-linecap="round"/>
+</svg>

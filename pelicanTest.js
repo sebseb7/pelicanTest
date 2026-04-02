@@ -39,7 +39,9 @@ const MODELS = [
     'openrouter/hunter-alpha',
     'openrouter/healer-alpha',
     'xiaomi/mimo-v2-pro',
-    'minimax/minimax-m2.7'
+    'minimax/minimax-m2.7',
+    'x-ai/grok-4.20',
+    'kwaipilot/kat-coder-pro-v2'
 ];
 
 // Ensure output directory exists

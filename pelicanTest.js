@@ -41,7 +41,8 @@ const MODELS = [
     'xiaomi/mimo-v2-pro',
     'minimax/minimax-m2.7',
     'x-ai/grok-4.20',
-    'kwaipilot/kat-coder-pro-v2'
+    'kwaipilot/kat-coder-pro-v2',
+    'z-ai/glm-5.1'
 ];
 
 // Ensure output directory exists

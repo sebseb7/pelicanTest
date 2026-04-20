@@ -28,5 +28,7 @@
   "openai/gpt-5.4-nano": 0.002703195,
   "x-ai/grok-4.20": 0.005829912,
   "kwaipilot/kat-coder-pro-v2": 0.001307097,
-  "z-ai/glm-5.1": 0.02559332160002376
+  "z-ai/glm-5.1": 0.02559332160002376,
+  "openrouter/elephant-alpha": 0,
+  "moonshotai/kimi-k2.6": 0.0420315885
 }

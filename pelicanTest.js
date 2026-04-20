@@ -42,7 +42,9 @@ const MODELS = [
     'minimax/minimax-m2.7',
     'x-ai/grok-4.20',
     'kwaipilot/kat-coder-pro-v2',
-    'z-ai/glm-5.1'
+    'z-ai/glm-5.1',
+    'openrouter/elephant-alpha',
+    'moonshotai/kimi-k2.6',
 ];
 
 // Ensure output directory exists

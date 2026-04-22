@@ -45,6 +45,8 @@ const MODELS = [
     'z-ai/glm-5.1',
     'openrouter/elephant-alpha',
     'moonshotai/kimi-k2.6',
+    'xiaomi/mimo-v2.5',
+    'xiaomi/mimo-v2.5-pro',
 ];
 
 // Ensure output directory exists

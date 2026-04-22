@@ -30,5 +30,7 @@
   "kwaipilot/kat-coder-pro-v2": 0.001307097,
   "z-ai/glm-5.1": 0.02559332160002376,
   "openrouter/elephant-alpha": 0,
-  "moonshotai/kimi-k2.6": 0.0420315885
+  "moonshotai/kimi-k2.6": 0.0420315885,
+  "xiaomi/mimo-v2.5": 0.008748036,
+  "xiaomi/mimo-v2.5-pro": 0.00663993
 }

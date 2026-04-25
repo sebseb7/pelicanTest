@@ -47,6 +47,9 @@ const MODELS = [
     'moonshotai/kimi-k2.6',
     'xiaomi/mimo-v2.5',
     'xiaomi/mimo-v2.5-pro',
+    'openai/gpt-5.5',
+    'deepseek/deepseek-v4-flash'
+
 ];
 
 // Ensure output directory exists

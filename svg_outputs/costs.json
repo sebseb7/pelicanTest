@@ -32,5 +32,8 @@
   "openrouter/elephant-alpha": 0,
   "moonshotai/kimi-k2.6": 0.0420315885,
   "xiaomi/mimo-v2.5": 0.008748036,
-  "xiaomi/mimo-v2.5-pro": 0.00663993
+  "xiaomi/mimo-v2.5-pro": 0.00663993,
+  "deepseek/deepseek-v4-pro": 0.0413665164,
+  "deepseek/deepseek-v4-flash": 0.0033164208,
+  "openai/gpt-5.5": 0
 }

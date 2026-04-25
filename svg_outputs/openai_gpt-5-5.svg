@@ -1,0 +1,134 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A pelican riding a bicycle">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfefff"/>
+      <stop offset="100%" stop-color="#f7fbff"/>
+    </linearGradient>
+    <style>
+      .outline { stroke:#263238; stroke-width:5; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { stroke:#263238; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <path d="M0 405 C120 380, 240 425, 360 400 C500 370, 640 420, 800 390 L800 500 L0 500 Z"
+        fill="#b8e08d"/>
+  <path d="M0 430 H800" stroke="#6bb65f" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- bicycle wheels -->
+  <g fill="none" class="outline">
+    <circle cx="250" cy="350" r="82" fill="#ffffff" opacity="0.45"/>
+    <circle cx="560" cy="350" r="82" fill="#ffffff" opacity="0.45"/>
+  </g>
+
+  <!-- spokes -->
+  <g class="thin" fill="none" opacity="0.75">
+    <g>
+      <line x1="250" y1="350" x2="250" y2="268"/>
+      <line x1="250" y1="350" x2="250" y2="432"/>
+      <line x1="250" y1="350" x2="168" y2="350"/>
+      <line x1="250" y1="350" x2="332" y2="350"/>
+      <line x1="250" y1="350" x2="192" y2="292"/>
+      <line x1="250" y1="350" x2="308" y2="408"/>
+      <line x1="250" y1="350" x2="308" y2="292"/>
+      <line x1="250" y1="350" x2="192" y2="408"/>
+    </g>
+    <g>
+      <line x1="560" y1="350" x2="560" y2="268"/>
+      <line x1="560" y1="350" x2="560" y2="432"/>
+      <line x1="560" y1="350" x2="478" y2="350"/>
+      <line x1="560" y1="350" x2="642" y2="350"/>
+      <line x1="560" y1="350" x2="502" y2="292"/>
+      <line x1="560" y1="350" x2="618" y2="408"/>
+      <line x1="560" y1="350" x2="618" y2="292"/>
+      <line x1="560" y1="350" x2="502" y2="408"/>
+    </g>
+  </g>
+
+  <!-- bicycle frame -->
+  <g fill="none" class="outline">
+    <path d="M250 350 L355 350 L430 260 L545 350 L355 350 L430 350 L545 350"/>
+    <path d="M430 260 L405 205"/>
+    <path d="M405 205 L365 205"/>
+    <path d="M545 350 L520 240"/>
+    <path d="M520 240 C555 230, 590 235, 615 255"/>
+    <path d="M615 255 L632 248"/>
+  </g>
+
+  <!-- crank and pedals -->
+  <g class="outline" fill="none">
+    <circle cx="430" cy="350" r="18"/>
+    <line x1="430" y1="350" x2="455" y2="330"/>
+    <line x1="430" y1="350" x2="405" y2="372"/>
+  </g>
+  <rect x="453" y="321" width="42" height="13" rx="6" fill="#263238"/>
+  <rect x="365" y="369" width="42" height="13" rx="6" fill="#263238"/>
+
+  <!-- pelican body -->
+  <g>
+    <ellipse cx="390" cy="220" rx="115" ry="72" fill="#fff8e8" class="outline"/>
+    <path d="M315 225 C350 270, 425 275, 480 225 C445 245, 370 245, 315 225 Z"
+          fill="#d9ecf2" class="thin"/>
+    <path d="M350 170 C370 135, 410 118, 445 145 C470 164, 478 195, 466 223"
+          fill="none" class="outline"/>
+  </g>
+
+  <!-- pelican neck and head -->
+  <path d="M448 158 C445 116, 474 78, 515 80 C548 82, 567 104, 563 130
+           C557 164, 505 166, 474 151"
+        fill="#fff8e8" class="outline"/>
+
+  <!-- crest feathers -->
+  <path d="M505 82 C496 60, 515 52, 520 76" fill="none" class="thin"/>
+  <path d="M522 84 C522 61, 545 61, 536 83" fill="none" class="thin"/>
+
+  <!-- beak and pouch -->
+  <path d="M558 118 C610 108, 675 112, 706 130
+           C665 140, 602 139, 555 130 Z"
+        fill="#ffb347" class="outline"/>
+  <path d="M555 130 C597 148, 662 151, 700 132
+           C680 181, 594 179, 555 145 Z"
+        fill="#ffd18c" class="outline"/>
+  <path d="M575 129 C615 134, 660 134, 694 130" fill="none" class="thin"/>
+
+  <!-- face -->
+  <circle cx="535" cy="108" r="7" fill="#263238"/>
+  <circle cx="537" cy="106" r="2" fill="white"/>
+
+  <!-- wing detail -->
+  <path d="M378 194 C335 205, 326 242, 365 260 C410 279, 457 248, 468 218
+           C430 236, 399 226, 378 194 Z"
+        fill="#e7f3f7" class="thin"/>
+
+  <!-- pelican legs -->
+  <g class="outline" fill="none">
+    <path d="M370 284 C375 310, 390 326, 405 372"/>
+    <path d="M442 280 C448 305, 455 315, 455 330"/>
+  </g>
+
+  <!-- feet on pedals -->
+  <path d="M380 374 C395 363, 415 366, 424 378 C404 387, 388 386, 380 374 Z"
+        fill="#ff9f43" class="outline"/>
+  <path d="M448 329 C463 315, 486 316, 496 329 C476 341, 458 341, 448 329 Z"
+        fill="#ff9f43" class="outline"/>
+
+  <!-- tail feathers -->
+  <path d="M286 202 C242 185, 218 158, 206 128
+           C245 140, 278 160, 315 195 Z"
+        fill="#fff8e8" class="outline"/>
+  <path d="M280 213 C240 210, 207 195, 184 168
+           C226 169, 264 180, 308 202 Z"
+        fill="#e7f3f7" class="outline"/>
+
+  <!-- handlebar wing/arm gesture -->
+  <path d="M480 205 C515 210, 535 225, 552 247" fill="none" class="outline"/>
+  <path d="M548 247 C560 246, 571 249, 580 257" fill="none" class="outline"/>
+
+  <!-- motion lines -->
+  <g fill="none" stroke="#5ca9dd" stroke-width="4" stroke-linecap="round" opacity="0.6">
+    <path d="M120 315 H185"/>
+    <path d="M95 350 H155"/>
+    <path d="M135 385 H205"/>
+  </g>
+</svg>

@@ -38,5 +38,9 @@
   "openai/gpt-5.5": 0,
   "tencent/hy3-preview:free": 0,
   "poolside/laguna-m.1:free": 0,
-  "anthropic/claude-fable-5": 0.1041579
+  "anthropic/claude-fable-5": 0.1041579,
+  "minimax/minimax-m3": 0.0029479626,
+  "qwen/qwen3.7-plus": 0.010065924,
+  "stepfun/step-3.7-flash": 0.0103089195,
+  "google/gemini-3.5-flash": 0.106888815
 }

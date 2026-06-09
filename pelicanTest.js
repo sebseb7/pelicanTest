@@ -51,7 +51,11 @@ const MODELS = [
     'deepseek/deepseek-v4-flash',
     'tencent/hy3-preview:free',
     'poolside/laguna-m.1:free',
-    'anthropic/claude-fable-5'
+    'anthropic/claude-fable-5',
+    'minimax/minimax-m3',
+    'qwen/qwen3.7-plus',
+    'stepfun/step-3.7-flash',
+    'google/gemini-3.5-flash'
 ];
 
 // Ensure output directory exists

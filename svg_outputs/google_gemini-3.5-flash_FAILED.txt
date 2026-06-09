@@ -1,0 +1,35 @@
+%" y2="100%">
+              <stop offset="0%" stop-color="#FFD54F"/>
+              <stop offset="60%" stop-color="#FFB300"/>
+              <stop offset="100%" stop-color="#FF8F00"/>
+          </linearGradient>
+          ```
+          This adds real depth.
+
+        - Eye highlight:
+          ```xml
+          <circle cx="445" cy="105" r="9" fill="#FFFFFF"/>
+          <circle cx="447" cy="103" r="5" fill="#37474F"/>
+          <circle cx="449" cy="100" r="2" fill="#FFFFFF"/>
+          ```
+          Guarantees expressiveness.
+
+        - Foot-to-pedal depth styling:
+          Using a thin dark outline or shadow.
+          Everything fits. The vector artwork will feel premium, delightful, and highly custom.
+
+    *   ONLY valid SVG code? Yes.
+    *   No HTML wrapper or explanations? Yes.
+    *   Correct code style/block? Yes.
+    *   Proper attributes, viewBox? Yes (`0 0 800 600`).
+    *   Semantic elements? Yes (g, path, circle, rect, etc.)
+    *   Scalable & responsive? Yes.
+    *   Visual appeal: Extremely high. Retro aesthetic, cute details, vibrant mid-century modern colors.
+
+10. *Execute creation of XML code.*```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Sun Gradients -->
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFCC80" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FF8A

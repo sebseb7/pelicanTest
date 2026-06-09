@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="400" height="300">
+  <!-- Bicycle -->
+  <g stroke="#555" stroke-width="3" stroke-linecap="round">
+    <!-- Wheels -->
+    <circle cx="50" cy="120" r="30" fill="none" stroke="#333" stroke-width="4"/>
+    <circle cx="150" cy="120" r="30" fill="none" stroke="#333" stroke-width="4"/>
+    
+    <!-- Frame -->
+    <path d="M50 120 L90 90 L150 120" fill="none"/>
+    <path d="M90 90 L110 90" fill="none"/>
+    <path d="M110 90 L130 120" fill="none"/>
+    
+    <!-- Handlebars and pedals -->
+    <line x1="90" y1="90" x2="70" y2="70"/>
+    <line x1="110" y1="90" x2="130" y2="85"/>
+    <line x1="110" y1="90" x2="120" y2="100"/>
+    <circle cx="120" cy="100" r="5" fill="#555"/>
+  </g>
+
+  <!-- Pelican -->
+  <g transform="translate(90, 60)">
+    <!-- Body -->
+    <ellipse cx="0" cy="20" rx="25" ry="15" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Neck -->
+    <path d="M5 10 C15 0 25 -5 40 -2" fill="none" stroke="#333" stroke-width="3"/>
+    
+    <!-- Head -->
+    <circle cx="45" cy="-5" r="12" fill="white" stroke="#333" stroke-width="2"/>
+    
+    <!-- Beak -->
+    <path d="M50 0 L65 5 L50 10 Z" fill="orange" stroke="#333" stroke-width="1"/>
+    
+    <!-- Eye -->
+    <circle cx="50" cy="-8" r="2" fill="black"/>
+    
+    <!-- Wing -->
+    <path d="M-5 30 Q0 25 5 30" fill="#f0f0f0" stroke="#333" stroke-width="1"/>
+  </g>
+</svg>

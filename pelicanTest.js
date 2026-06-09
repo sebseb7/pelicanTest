@@ -48,8 +48,10 @@ const MODELS = [
     'xiaomi/mimo-v2.5',
     'xiaomi/mimo-v2.5-pro',
     'openai/gpt-5.5',
-    'deepseek/deepseek-v4-flash'
-
+    'deepseek/deepseek-v4-flash',
+    'tencent/hy3-preview:free',
+    'poolside/laguna-m.1:free',
+    'anthropic/claude-fable-5'
 ];
 
 // Ensure output directory exists

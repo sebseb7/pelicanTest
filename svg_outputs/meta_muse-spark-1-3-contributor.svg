@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <title>Pelican riding a bicycle</title>
+  <rect width="640" height="420" rx="24" fill="#DFF6FF"/>
+  <circle cx="550" cy="60" r="35" fill="#FFD93D"/>
+  <ellipse cx="120" cy="70" rx="50" ry="18" fill="white"/>
+  <ellipse cx="160" cy="68" rx="40" ry="22" fill="white"/>
+  <rect x="0" y="350" width="640" height="70" fill="#A8D5BA"/>
+  <rect x="0" y="350" width="640" height="8" fill="#8BC49B"/>
+
+  <!-- speed lines -->
+  <g stroke="#9AC8DB" stroke-width="6" stroke-linecap="round">
+    <line x1="30" y1="270" x2="95" y2="270"/>
+    <line x1="15" y1="295" x2="90" y2="295"/>
+    <line x1="35" y1="320" x2="95" y2="320"/>
+  </g>
+
+  <!-- wheels -->
+  <g fill="none" stroke="#888" stroke-width="2">
+    <line x1="110" y1="320" x2="250" y2="320"/>
+    <line x1="180" y1="250" x2="180" y2="390"/>
+    <line x1="130" y1="270" x2="230" y2="370"/>
+    <line x1="230" y1="270" x2="130" y2="370"/>
+    <line x1="390" y1="320" x2="530" y2="320"/>
+    <line x1="460" y1="250" x2="460" y2="390"/>
+    <line x1="410" y1="270" x2="510" y2="370"/>
+    <line x1="510" y1="270" x2="410" y2="370"/>
+  </g>
+  <g fill="none" stroke="#2B2B2B" stroke-width="9">
+    <circle cx="180" cy="320" r="70"/>
+    <circle cx="460" cy="320" r="70"/>
+  </g>
+  <circle cx="180" cy="320" r="10" fill="#555"/>
+  <circle cx="460" cy="320" r="10" fill="#555"/>
+
+  <!-- bike frame -->
+  <g fill="none" stroke="#E63946" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="180" y1="320" x2="320" y2="320"/>
+    <line x1="320" y1="320" x2="270" y2="200"/>
+    <line x1="270" y1="200" x2="430" y2="190"/>
+    <line x1="320" y1="320" x2="430" y2="190"/>
+    <line x1="430" y1="190" x2="460" y2="320"/>
+  </g>
+  <!-- seat + handlebar -->
+  <ellipse cx="265" cy="193" rx="30" ry="10" fill="#222"/>
+  <path d="M430 190 L450 152 L472 152" fill="none" stroke="#222" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="320" cy="320" r="13" fill="#333"/>
+  <line x1="320" y1="320" x2="350" y2="345" stroke="#333" stroke-width="7" stroke-linecap="round"/>
+  <rect x="338" y="343" width="32" height="11" rx="4" fill="#222"/>
+
+  <!-- pelican leg pedaling -->
+  <path d="M285 180 L305 250 L348 342" fill="none" stroke="#FF9F1C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- pelican arm reaching to handlebar -->
+  <line x1="335" y1="140" x2="446" y2="158" stroke="#333" stroke-width="22" stroke-linecap="round"/>
+  <line x1="335" y1="140" x2="446" y2="158" stroke="white" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- scarf flowing -->
+  <path d="M350 105 Q300 105 250 92 Q275 115 235 125 Q285 148 352 122 Z" fill="#E63946" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- tail -->
+  <path d="M205 115 L152 92 L164 128 L152 152 L205 145 Z" fill="white" stroke="#333" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- body -->
+  <ellipse cx="275" cy="130" rx="78" ry="62" fill="white" stroke="#333" stroke-width="4"/>
+  <!-- wing -->
+  <ellipse cx="265" cy="138" rx="44" ry="28" transform="rotate(-15 265 138)" fill="#EDEDED" stroke="#333" stroke-width="3"/>
+
+  <!-- neck -->
+  <path d="M335 115 Q365 65 407 72" fill="none" stroke="#333" stroke-width="36" stroke-linecap="round"/>
+  <path d="M335 115 Q365 65 407 72" fill="none" stroke="white" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- head -->
+  <circle cx="415" cy="70" r="27" fill="white" stroke="#333" stroke-width="4"/>
+  <!-- helmet -->
+  <path d="M388 62 Q390 28 416 30 Q443 32 441 62 Q415 50 388 62 Z" fill="#457B9D" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="415" cy="26" r="5" fill="#E63946" stroke="#333" stroke-width="2"/>
+
+  <!-- beak + pouch -->
+  <path d="M435 85 L552 95 L475 142 L430 100 Z" fill="#FFBF69" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M435 60 L552 95 L435 85 Z" fill="#FF9F1C" stroke="#333" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- eye -->
+  <circle cx="419" cy="64" r="6.5" fill="#222"/>
+  <circle cx="421" cy="62" r="2" fill="white"/>
+  <circle cx="402" cy="80" r="5" fill="#FFAFCC" opacity="0.8"/>
+</svg>

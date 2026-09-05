@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <!-- Background / Ground -->
+  <line x1="20" y1="300" x2="300" y2="300" stroke="#dfe4ea" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Speed / Motion Lines -->
+  <line x1="15" y1="270" x2="50" y2="270" stroke="#dfe4ea" stroke-width="4" stroke-linecap="round"/>
+  <line x1="25" y1="285" x2="60" y2="285" stroke="#dfe4ea" stroke-width="4" stroke-linecap="round"/>
+  <line x1="30" y1="255" x2="60" y2="255" stroke="#dfe4ea" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- BACK WHEEL -->
+  <!-- Tire and Rim -->
+  <circle cx="100" cy="250" r="48" fill="none" stroke="#2f3542" stroke-width="6"/>
+  <circle cx="100" cy="250" r="42" fill="none" stroke="#bdc3c7" stroke-width="2"/>
+  <!-- Spokes -->
+  <line x1="100" y1="208" x2="100" y2="292" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="58" y1="250" x2="142" y2="250" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="70" y1="220" x2="130" y2="280" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="130" y1="220" x2="70" y2="280" stroke="#bdc3c7" stroke-width="1.5"/>
+
+  <!-- FRONT WHEEL -->
+  <!-- Tire and Rim -->
+  <circle cx="240" cy="250" r="48" fill="none" stroke="#2f3542" stroke-width="6"/>
+  <circle cx="240" cy="250" r="42" fill="none" stroke="#bdc3c7" stroke-width="2"/>
+  <!-- Spokes -->
+  <line x1="240" y1="208" x2="240" y2="292" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="198" y1="250" x2="282" y2="250" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="210" y1="220" x2="270" y2="280" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="270" y1="220" x2="210" y2="280" stroke="#bdc3c7" stroke-width="1.5"/>
+
+  <!-- PELICAN BACK LEG (Left side) -->
+  <path d="M 115 120 L 125 180 L 135 235" fill="none" stroke="#e55c00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 135 235 L 150 240 L 140 250 Z" fill="#e55c00"/>
+
+  <!-- <a></a> BIKE DRIVE TRAIN (Rear portion) -->
+  <!-- Chainring and Cog -->
+  <circle cx="150" cy="250" r="12" fill="#2f3542"/>
+  <circle cx="100" cy="250" r="6" fill="#2f3542"/>
+  <!-- Chain -->
+  <line x1="94" y1="244" x2="150" y2="238" stroke="#2f3542" stroke-width="2" stroke-dasharray="2,2"/>
+  <line x1="94" y1="256" x2="150" y2="262" stroke="#2f3542" stroke-width="2" stroke-dasharray="2,2"/>
+  
+  <!-- Left Crank and Pedal (Background) -->
+  <line x1="150" y1="250" x2="135" y2="235" stroke="#7f8c8d" stroke-width="4" stroke-linecap="round"/>
+  <rect x="125" y="235" width="15" height="5" rx="2" fill="#2f3542" transform="rotate(-15 135 240)"/>
+
+  <!-- BIKE FRAME -->
+  <!-- Rear Triangle -->
+  <polyline points="100,250 150,250 130,160 100,250" fill="none" stroke="#1e90ff" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Front Triangle -->
+  <polyline points="130,160 210,180 215,210 150,250 130,160" fill="none" stroke="#1e90ff" stroke-width="6" stroke-linejoin="round"/>
+  
+  <!-- Fork, Seat Post, Head Tube -->
+  <line x1="215" y1="210" x2="240" y2="250" stroke="#bdc6c9" stroke-width="5" stroke-linecap="round"/>
+  <line x1="130" y1="160" x2="125" y2="145" stroke="#bdc6c9" stroke-width="5" stroke-linecap="round"/>
+  <line x1="215" y1="210" x2="210" y2="180" stroke="#bdc6c9" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Seat -->
+  <ellipse cx="125" cy="145" rx="15" ry="6" fill="#2f3542"/>
+
+  <!-- Handlebars and Stem -->
+  <line x1="210" y1="180" x2="215" y2="165" stroke="#bdc3c7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 215 165 C 230 155, 240 150, 245 155" fill="none" stroke="#bdc3c7" stroke-width="5" stroke-linecap="round"/>
+  <!-- Handlebar Grip -->
+  <line x1="240" y1="155" x2="245" y2="155" stroke="#2f3542" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Front Crank and Pedal (Foreground) -->
+  <line x1="150" y1="250" x2="160" y2="265" stroke="#bdc3c7" stroke-width="5" stroke-linecap="round"/>
+  <rect x="150" y="265" width="20" height="5" rx="2" fill="#2f3542" transform="rotate(5 160 267)"/>
+
+  <!-- PELICAN BODY -->
+  <!-- Tail Feathers -->
+  <path d="M 85 215 Q 55 110 40 130 Q 30 145 50 145 Q 55 125 85 115 Z" fill="#ffffff" stroke="#2f3542" stroke-width="2"/>
+  
+  <!-- Neck -->
+  <path d="M 145 80 Q 155 35 190 45 L 195 55 Q 150 35 135 85 Z" fill="#ffffff" stroke="#2f3542" stroke-width="3"/>
+  
+  <!-- Body -->
+  <ellipse cx="130" cy="105" rx="45" ry="35" transform="rotate(-5 130 105)" fill="#ffffff" stroke="#2f3542" stroke-width="3"/>
+  
+  <!-- Head -->
+  <circle cx="195" cy="45" r="15" fill="#ffffff" stroke="#2f3542" stroke-width="3"/>
+  
+  <!-- Crest / Feathers -->
+  <path d="M 185 32 Q 180 25 183 20" fill="none" stroke="#2f3542" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 190 32 Q 185 25 188 20" fill="none" stroke="#2f3542" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eye -->
+  <circle cx="201" cy="45" r="4" fill="#ffffff" stroke="#2f3542" stroke-width="1.5"/>
+  <circle cx="202" cy="45" r="1.5" fill="#2f3542"/>
+
+  <!-- BEAK -->
+  <!-- Upper Beak -->
+  <path d="M 205 40 C 230 40, 240 50, 255 62 C 255 72, 245 72, 240 70 C 230 60, 215 55, 205 55 Z" fill="#f39c12" stroke="#d35400" stroke-width="2"/>
+  
+  <!-- Pouch -->
+  <path d="M 205 55 Q 225 95 240 70 Q 215 80 205 65 Z" fill="#f1c40f" stroke="#d35400" stroke-width="2"/>
+
+  <!-- PELICAN FRONT LEG (Right side) -->
+  <path d="M 145 120 L 150 180 L 160 265" fill="none" stroke="#ff7f50" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Front Webbed Foot -->
+  <path d="M 160 265 L 180 270 L 170 280 Z" fill="#ff7f50"/>
+
+  <!-- PELICAN WING -->
+  <!-- Secondary Wing Layer -->
+  <path d="M 145 95 C 170 95, 190 110, 220 145 C 200 120, 175 100, 145 105 Z" fill="#dfe5ea" stroke="#2f3542" stroke-width="1.5"/>
+  
+  <!-- Primary Wing Layer (overlapping handlebar to show control) -->
+  <path d="M 145 90 C 170 90, 200 110, 235 150 C 215 130, 180 105, 145 110 Z" fill="#f1f2f6" stroke="#2f3542" stroke-width="3"/>
+</svg>

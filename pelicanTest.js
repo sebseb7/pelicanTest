@@ -55,7 +55,12 @@ const MODELS = [
     'minimax/minimax-m3',
     'qwen/qwen3.7-plus',
     'stepfun/step-3.7-flash',
-    'google/gemini-3.5-flash'
+    'openai/gpt-6-astra',
+    'meta/muse-spark-1.3-contributor',
+    'google/gemini-3.8-flash',
+    'anthropic/claude-fable-5.1',
+    'tencent/hy4-preview',
+    'deepseek/deepseek-v4-flash-0731'
 ];
 
 // Ensure output directory exists

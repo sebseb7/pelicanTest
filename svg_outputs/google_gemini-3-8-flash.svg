@@ -1,0 +1,305 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F8F3"/>
+      <stop offset="100%" stop-color="#E4EFEF"/>
+    </linearGradient>
+
+    <!-- Sun/Backdrop Gradient -->
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FED166"/>
+      <stop offset="100%" stop-color="#F4A261"/>
+    </linearGradient>
+
+    <!-- Pelican Pouch Gradient -->
+    <linearGradient id="pouchGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFB703"/>
+      <stop offset="50%" stop-color="#FB8500"/>
+      <stop offset="100%" stop-color="#D9480F"/>
+    </linearGradient>
+
+    <!-- Bike Frame Gradient -->
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#05668D"/>
+      <stop offset="50%" stop-color="#028090"/>
+      <stop offset="100%" stop-color="#00A896"/>
+    </linearGradient>
+
+    <!-- Tire Gradient -->
+    <radialGradient id="rubberGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#2B2D42"/>
+      <stop offset="85%" stop-color="#1F202E"/>
+      <stop offset="100%" stop-color="#11121A"/>
+    </radialGradient>
+
+    <!-- Chrome/Metal -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0E1DD"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#9E9E9E"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1B263B" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. ENVIRONMENT & BACKDROP -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Graphic Circles & Sun -->
+  <g transform="translate(450, 310)">
+    <circle cx="0" cy="-20" r="230" fill="url(#sunGrad)" opacity="0.85" />
+    <circle cx="-160" cy="-140" r="18" fill="#FFFFFF" opacity="0.4"/>
+    <circle cx="180" cy="-120" r="10" fill="#FFFFFF" opacity="0.5"/>
+    <!-- Speed Rings / Wind -->
+    <path d="M-280,-60 C-220,-80 -180,-40 -120,-60" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+    <path d="M-320,10 C-240,20 -200,-20 -130,-10" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+    <path d="M160,-160 C220,-170 250,-130 300,-140" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Ground Line & Shadows -->
+  <ellipse cx="440" cy="545" rx="340" ry="22" fill="#1B263B" opacity="0.12"/>
+  <ellipse cx="280" cy="546" rx="90" ry="10" fill="#1B263B" opacity="0.2"/>
+  <ellipse cx="600" cy="546" rx="90" ry="10" fill="#1B263B" opacity="0.2"/>
+  <path d="M 100 546 L 800 546" stroke="#CAD2C5" stroke-width="3" stroke-dasharray="16 12" stroke-linecap="round"/>
+
+  <!-- 2. BICYCLE (REAR LAYER ELEMENTS) -->
+  <!-- Left Pedal & Crank (Facing Away) -->
+  <g id="back-pedal">
+    <line x1="440" y1="450" x2="480" y2="495" stroke="#7F8C8D" stroke-width="7" stroke-linecap="round"/>
+    <polygon points="468,495 496,495 492,503 464,503" fill="#34495E"/>
+    <!-- Back Foot (Left) -->
+    <path d="M 455 480 C 470 480 485 490 490 496 C 475 500 460 498 450 492 Z" fill="#E85D04"/>
+    <path d="M 430 420 L 460 485" stroke="#F48C06" stroke-width="11" stroke-linecap="round"/> <!-- Back leg bar -->
+  </g>
+
+  <!-- Rear Wheel -->
+  <g id="rear-wheel" transform="translate(280, 450)" filter="url(#shadow)">
+    <!-- Tire -->
+    <circle cx="0" cy="0" r="92" fill="none" stroke="url(#rubberGrad)" stroke-width="16"/>
+    <!-- Inner Rim -->
+    <circle cx="0" cy="0" r="83" fill="none" stroke="#E0E1DD" stroke-width="5"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#C5C6C7" stroke-width="1.5"/>
+    <!-- Spokes -->
+    <g stroke="#C5C6C7" stroke-width="1.5" opacity="0.85">
+      <line x1="-80" y1="0" x2="80" y2="0"/><line x1="0" y1="-80" x2="0" y2="80"/>
+      <line x1="-57" y1="-57" x2="57" y2="57"/><line x1="-57" y1="57" x2="57" y2="-57"/>
+      <line x1="-74" y1="-31" x2="74" y2="31"/><line x1="-74" y1="31" x2="74" y2="-31"/>
+      <line x1="-31" y1="-74" x2="31" y2="74"/><line x1="31" y1="-74" x2="-31" y2="74"/>
+    </g>
+    <!-- Large Rear Cog -->
+    <circle cx="0" cy="0" r="16" fill="url(#metalGrad)" stroke="#6C757D" stroke-width="1"/>
+    <!-- Reflector -->
+    <rect x="-4" y="-55" width="8" height="18" rx="3" fill="#FFB703" stroke="#FB8500" stroke-width="1"/>
+  </g>
+
+  <!-- Front Wheel -->
+  <g id="front-wheel" transform="translate(600, 450)" filter="url(#shadow)">
+    <!-- Tire -->
+    <circle cx="0" cy="0" r="92" fill="none" stroke="url(#rubberGrad)" stroke-width="16"/>
+    <!-- Inner Rim -->
+    <circle cx="0" cy="0" r="83" fill="none" stroke="#E0E1DD" stroke-width="5"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#C5C6C7" stroke-width="1.5"/>
+    <!-- Spokes -->
+    <g stroke="#C5C6C7" stroke-width="1.5" opacity="0.85">
+      <line x1="-80" y1="0" x2="80" y2="0"/><line x1="0" y1="-80" x2="0" y2="80"/>
+      <line x1="-57" y1="-57" x2="57" y2="57"/><line x1="-57" y1="57" x2="57" y2="-57"/>
+      <line x1="-74" y1="-31" x2="74" y2="31"/><line x1="-74" y1="31" x2="74" y2="-31"/>
+      <line x1="-31" y1="-74" x2="31" y2="74"/><line x1="31" y1="-74" x2="-31" y2="74"/>
+    </g>
+    <!-- Hub -->
+    <circle cx="0" cy="0" r="10" fill="url(#metalGrad)" stroke="#6C757D" stroke-width="1"/>
+  </g>
+
+  <!-- 3. BICYCLE FRAMEWORK -->
+  <g id="bike-frame" filter="url(#shadow)">
+    <!-- Rear Dropouts to Seat Post / Chainstay -->
+    <line x1="280" y1="450" x2="440" y2="450" stroke="#05668D" stroke-width="9" stroke-linecap="round"/>
+    <line x1="280" y1="450" x2="365" y2="330" stroke="#028090" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Mint/Teal Modern Vintage Main Triangle -->
+    <!-- Seat Tube -->
+    <line x1="365" y1="330" x2="440" y2="450" stroke="url(#frameGrad)" stroke-width="11" stroke-linecap="round"/>
+    <!-- Down Tube -->
+    <line x1="440" y1="450" x2="540" y2="280" stroke="url(#frameGrad)" stroke-width="13" stroke-linecap="round"/>
+    <!-- Top Tube (Slight curved retro cruiser style) -->
+    <path d="M 365 330 C 420 310 480 295 540 280" fill="none" stroke="url(#frameGrad)" stroke-width="11" stroke-linecap="round"/>
+    <!-- Elegant Secondary Twin Tube -->
+    <path d="M 280 450 C 340 370 420 325 540 295" fill="none" stroke="#F4A261" stroke-width="4" opacity="0.85" stroke-linecap="round"/>
+
+    <!-- Front Fork & Steering Column -->
+    <line x1="600" y1="450" x2="540" y2="280" stroke="#028090" stroke-width="9" stroke-linecap="round"/>
+    <line x1="540" y1="280" x2="528" y2="235" stroke="url(#metalGrad)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Handlebars (Cruiser Swept Back) -->
+    <path d="M 528 235 Q 520 200 480 210" fill="none" stroke="url(#metalGrad)" stroke-width="7" stroke-linecap="round"/>
+    <!-- Handlebar Grip -->
+    <path d="M 488 208 L 468 214" stroke="#264653" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- Retro Ding-Dong Bell -->
+    <circle cx="510" cy="205" r="7" fill="#E9C46A" stroke="#DDA15E" stroke-width="1"/>
+    <circle cx="511" cy="203" r="2" fill="#FFF"/>
+
+    <!-- Chrome Headlight -->
+    <path d="M 552 265 L 575 258 C 578 268 578 277 575 285 L 552 278 Z" fill="url(#metalGrad)"/>
+    <ellipse cx="575" cy="272" rx="3" ry="14" fill="#E0FBFC" stroke="#C5C6C7"/>
+    <!-- Light Beam -->
+    <polygon points="578,264 680,240 670,310 578,280" fill="#FFF" opacity="0.15"/>
+
+    <!-- Saddle / Seat -->
+    <path d="M 365 330 L 360 295" stroke="url(#metalGrad)" stroke-width="7" stroke-linecap="round"/> <!-- Seatpost -->
+    <!-- Vintage Leather Saddle -->
+    <path d="M 315 288 C 325 280 375 280 395 292 C 385 303 365 303 355 303 C 335 303 323 300 315 288 Z" fill="#6F1D1B" filter="url(#shadow)"/>
+    <!-- Saddle Springs -->
+    <circle cx="330" cy="298" r="4" fill="none" stroke="#C5C6C7" stroke-width="2"/>
+    <circle cx="340" cy="298" r="4" fill="none" stroke="#C5C6C7" stroke-width="2"/>
+
+    <!-- Front Chainring & Chainguard -->
+    <circle cx="440" cy="450" r="26" fill="url(#metalGrad)" stroke="#495057" stroke-width="1.5"/>
+    <circle cx="440" cy="450" r="8" fill="#1B263B"/>
+    <!-- Swoovy Chainguard -->
+    <path d="M 430 435 Q 360 435 320 445 Q 360 460 445 460 Q 470 460 470 445 Q 470 435 430 435 Z" fill="#00A896" opacity="0.9"/>
+  </g>
+
+  <!-- 4. THE PELICAN (RIDER) -->
+  <g id="pelican-character">
+    <!-- Tail Feathers Resting over Back of Saddle -->
+    <path d="M 285 245 C 270 255 255 280 270 295 C 290 295 315 280 330 265 Z" fill="#DCE5EC" stroke="#BACAD6" stroke-width="1.5"/>
+    <path d="M 270 270 C 250 280 240 300 255 315 C 275 315 305 295 325 280 Z" fill="#C3D3DE"/>
+
+    <!-- Main Body (Torso, plump and forward tilted) -->
+    <path d="M 315 255 C 305 210 350 170 410 175 C 445 178 470 205 465 245 C 460 290 415 330 350 325 C 320 322 318 285 315 255 Z" 
+          fill="#F7F9FA" stroke="#D7E0E7" stroke-width="1.5" filter="url(#shadow)"/>
+
+    <!-- Belly Highlight/Contour -->
+    <path d="M 350 325 C 400 325 450 290 455 245 C 455 230 448 210 435 195 C 420 230 380 290 330 310 C 336 320 342 324 350 325 Z" fill="#EBF1F5"/>
+
+    <!-- RHYTHMIC PEDALING: Right/Front Leg & Foot -->
+    <g id="front-leg">
+      <!-- Thigh Feather Tuft -->
+      <path d="M 370 305 C 385 300 405 315 395 335 C 385 345 365 340 365 320 Z" fill="#DCE5EC"/>
+      <!-- Orange Leg Bone (Reaching Down & Forward to Pedal) -->
+      <polyline points="380,330 400,380 415,425" fill="none" stroke="#FB8500" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Knobby Knee -->
+      <circle cx="400" cy="380" r="7" fill="#F48C06"/>
+
+      <!-- Right Pedal and Crank -->
+      <line x1="440" y1="450" x2="415" y2="425" stroke="#CED4DA" stroke-width="7" stroke-linecap="round"/>
+      <polygon points="400,422 430,422 425,429 395,429" fill="#212529"/>
+
+      <!-- Large Webbed Pelican Foot Wrapping Pedal -->
+      <!-- Heel & Ankle -->
+      <ellipse cx="414" cy="423" rx="7" ry="5" fill="#E85D04"/>
+      <!-- 3 Webbed Long Toes -->
+      <path d="M 412 423 L 440 425 C 445 425 448 429 440 432 L 405 431 Z" fill="#F48C06"/>
+      <path d="M 412 422 L 438 416 C 444 415 445 420 438 423 L 408 426 Z" fill="#FFB703"/>
+      <path d="M 410 424 L 432 434 C 436 436 433 439 427 437 L 405 428 Z" fill="#E85D04"/>
+    </g>
+
+    <!-- Graceful Curving S-Neck -->
+    <path d="M 405 185 C 410 130 440 85 490 85 C 525 85 530 115 515 145 C 500 170 475 180 445 185 Z" 
+          fill="#FFFFFF" stroke="#D7E0E7" stroke-width="1.5" filter="url(#shadow)"/>
+    <!-- Neck Shadow Depth -->
+    <path d="M 405 185 C 412 145 435 110 470 95 C 450 120 435 150 435 185 Z" fill="#E2EBF0"/>
+
+    <!-- Head & Big Eye -->
+    <path d="M 480 95 C 480 60 520 60 535 85 C 545 105 535 130 515 135 C 495 140 480 125 480 95 Z" fill="#FFFFFF"/>
+    
+    <!-- Feather Crest/Cowlick blowing in the wind -->
+    <path d="M 485 75 Q 460 65 445 75 Q 465 83 480 84" fill="#FFFFFF" stroke="#BACAD6" stroke-width="1"/>
+    <path d="M 482 86 Q 455 83 440 93 Q 465 96 480 93" fill="#DCE5EC"/>
+
+    <!-- The Expressive Eye -->
+    <ellipse cx="510" cy="85" rx="10" ry="12" fill="#FFB703"/>
+    <ellipse cx="512" cy="85" rx="6" ry="8" fill="#1B263B"/>
+    <circle cx="514" cy="81" r="2.5" fill="#FFFFFF"/>
+    <!-- Friendly Brow -->
+    <path d="M 498 75 C 505 70 520 70 526 77" fill="none" stroke="#2B2D42" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- 5. ICONIC PELICAN BEAK & POUCH -->
+    <!-- Giant Scooping Pouch -->
+    <path d="M 525 115 C 545 150 560 215 625 210 C 665 205 690 155 700 120 C 640 130 580 125 525 115 Z" 
+          fill="url(#pouchGrad)" filter="url(#shadow)" opacity="0.95"/>
+    
+    <!-- Pouch Stretch & Vein Details -->
+    <path d="M 545 125 Q 585 185 640 185" fill="none" stroke="#FB8500" stroke-width="2" opacity="0.6"/>
+    <path d="M 575 125 Q 615 190 660 165" fill="none" stroke="#FB8500" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Little Stolen Fish sticking out of the pouch! -->
+    <g id="snack-fish" transform="translate(640, 140) rotate(-18)">
+      <path d="M 0 0 C 15 -10 30 -5 40 5 C 30 15 15 10 0 0 Z" fill="#48CAE4"/>
+      <!-- Tail fin -->
+      <polygon points="38,4 52,-4 48,6" fill="#0096C7"/>
+      <polygon points="38,4 52,14 48,5" fill="#0096C7"/>
+      <!-- Fish Eye -->
+      <circle cx="10" cy="0" r="2" fill="#1B263B"/>
+      <!-- Cross mark (silly dead eye) -->
+      <path d="M 9 -1 L 13 3 M 13 -1 L 9 3" stroke="#FFF" stroke-width="0.8"/>
+    </g>
+
+    <!-- Rigid Upper Beak (Hooked Bill) -->
+    <path d="M 520 95 C 565 100 645 105 710 115 C 725 118 730 124 722 128 C 705 134 675 126 525 115 Z" 
+          fill="#FFB703" stroke="#F4A261" stroke-width="1.5"/>
+    <!-- Hook at tip of bill -->
+    <path d="M 710 115 Q 724 117 721 127 Q 714 133 711 122 Z" fill="#D9480F"/>
+    <!-- Nostril Ridge Line -->
+    <path d="M 525 97 C 570 102 650 107 705 116" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Chic Retro Cycling Cap perched between head & crest -->
+    <g id="cycling-cap">
+      <!-- Cap Dome -->
+      <path d="M 478 78 C 485 45 528 45 538 72 Z" fill="#E63946"/>
+      <!-- White Racing Stripe -->
+      <path d="M 498 51 C 504 50 514 50 520 54 L 515 72 L 502 73 Z" fill="#F1FAEE"/>
+      <!-- Up-turned Visor / Bill of Cap -->
+      <path d="M 532 70 C 545 68 562 55 565 52 C 564 62 548 78 530 78 Z" fill="#F1FAEE" stroke="#E63946" stroke-width="1.5"/>
+      <!-- Tiny Top Button -->
+      <circle cx="508" cy="49" r="3" fill="#F1FAEE"/>
+    </g>
+
+    <!-- Pelican's Wing (Arms resting casually forward on the handlebars) -->
+    <!-- Upper Wing/Shoulder -->
+    <path d="M 350 205 C 375 190 410 215 425 245 C 410 265 375 270 345 250 C 335 235 340 215 350 205 Z" 
+          fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Folded Forewing & Primary Flight Feathers Grip Handlebars -->
+    <!-- Feather layers -->
+    <path d="M 380 230 C 420 220 460 215 480 215 C 475 230 450 255 420 260 C 395 265 375 250 380 230 Z" 
+          fill="#E2EBF0"/>
+    <path d="M 405 240 C 445 230 475 212 488 214 C 485 225 470 242 445 255 C 430 262 410 255 405 240 Z" 
+          fill="#BACAD6"/>
+
+    <!-- Wing Tip 'Feather Fingers' Curled Around the Handlebar Grip -->
+    <path d="M 465 210 C 475 205 488 208 488 216 C 485 224 472 225 464 218 Z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M 468 217 C 478 212 490 217 488 223 C 485 229 474 229 466 223 Z" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <path d="M 472 223 C 480 220 491 224 488 230 C 484 235 476 233 470 227 Z" fill="#E2EBF0" stroke="#94A3B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- 6. MOTION & WHIMSICAL DETAILS -->
+  <!-- Action / Wind Dash Lines -->
+  <g stroke="#94A3B8" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <!-- Behind rear tire -->
+    <line x1="170" y1="460" x2="130" y2="460" stroke-dasharray="10 15"/>
+    <line x1="190" y1="435" x2="145" y2="435" stroke-width="2"/>
+    <line x1="160" y1="480" x2="110" y2="480" stroke-dasharray="8 8"/>
+    <!-- Behind Bird Body -->
+    <line x1="240" y1="210" x2="190" y2="210" stroke-width="2.5" stroke-dasharray="12 8"/>
+    <line x1="250" y1="235" x2="210" y2="235" stroke-width="2"/>
+    <!-- Little Sweat/Effort Drop of Joy -->
+    <path d="M 465 130 C 460 120 470 115 470 115 C 470 115 475 125 470 130 C 468 132 466 132 465 130 Z" fill="#38BDF8" opacity="0.8"/>
+  </g>
+
+  <!-- Road Dust Puffs Behind Bike -->
+  <g fill="#D8E2DC" opacity="0.5">
+    <circle cx="170" cy="535" r="12"/>
+    <circle cx="150" cy="540" r="7"/>
+    <circle cx="138" cy="542" r="4"/>
+  </g>
+</svg>

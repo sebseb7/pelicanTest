@@ -60,7 +60,8 @@ const MODELS = [
     'google/gemini-3.8-flash',
     'anthropic/claude-fable-5.1',
     'tencent/hy4-preview',
-    'deepseek/deepseek-v4-flash-0731'
+    'deepseek/deepseek-v4-flash-0731',
+    'deepseek/deepseek-v4.1-flash'
 ];
 
 // Ensure output directory exists

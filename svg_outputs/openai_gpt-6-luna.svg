@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pelican riding a bicycle</title>
+  <desc id="desc">A cheerful pelican pedals a teal bicycle beneath a sunny sky.</desc>
+
+  <!-- Sky and ground -->
+  <rect width="800" height="600" fill="#eaf8fc"/>
+  <circle cx="690" cy="100" r="44" fill="#ffd66b"/>
+  <path d="M0 492 Q190 468 380 490 T800 482 V600 H0Z" fill="#d8efcf"/>
+  <path d="M55 500 H745" stroke="#b5d9aa" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Bicycle wheels -->
+  <g fill="none" stroke-linecap="round">
+    <circle cx="220" cy="420" r="91" stroke="#263d50" stroke-width="9"/>
+    <circle cx="570" cy="420" r="91" stroke="#263d50" stroke-width="9"/>
+    <circle cx="220" cy="420" r="82" stroke="#8da8b2" stroke-width="2"/>
+    <circle cx="570" cy="420" r="82" stroke="#8da8b2" stroke-width="2"/>
+
+    <!-- Spokes -->
+    <g stroke="#9bb2bb" stroke-width="2">
+      <path d="M220 338V502 M138 420H302 M162 362L278 478 M162 478L278 362"/>
+      <path d="M570 338V502 M488 420H652 M512 362L628 478 M512 478L628 362"/>
+    </g>
+
+    <!-- Frame -->
+    <g stroke="#168b87" stroke-width="11">
+      <path d="M220 420L330 306L395 420L220 420"/>
+      <path d="M330 306L476 306L395 420"/>
+      <path d="M476 306L570 420"/>
+    </g>
+    <g stroke="#263d50" stroke-width="8">
+      <path d="M330 306L308 292"/>
+      <path d="M465 306L482 260"/>
+      <path d="M463 260H511"/>
+    </g>
+
+    <!-- Hubs and crank -->
+    <g fill="#f4fbfc" stroke="#263d50" stroke-width="5">
+      <circle cx="220" cy="420" r="8"/>
+      <circle cx="570" cy="420" r="8"/>
+      <circle cx="395" cy="420" r="10"/>
+    </g>
+    <path d="M395 420L420 389 M395 420L360 450" stroke="#263d50" stroke-width="7"/>
+    <path d="M411 389H432 M350 450H370" stroke="#263d50" stroke-width="7" stroke-linecap="round"/>
+    <path d="M303 291H338" stroke="#263d50" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pelican's legs -->
+  <g fill="none" stroke="#e98242" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M375 269L408 333L420 389"/>
+    <path d="M397 270L358 337L360 450"/>
+  </g>
+  <!-- Webbed feet on the pedals -->
+  <path d="M416 387 Q424 378 432 385 L437 391 Q427 396 416 393Z" fill="#f29a4a"/>
+  <path d="M351 447 Q359 440 367 446 L375 452 Q364 458 352 454Z" fill="#f29a4a"/>
+
+  <!-- Pelican body -->
+  <path d="M323 235
+           Q341 207 383 216
+           Q421 222 435 253
+           Q430 281 397 292
+           Q357 297 330 275
+           Q316 258 323 235Z"
+        fill="#fffdf5" stroke="#d5e2e3" stroke-width="3"/>
+  <!-- Wing -->
+  <path d="M337 237
+           Q365 220 395 238
+           Q408 247 411 264
+           Q384 278 353 263
+           Q339 255 337 237Z"
+        fill="#328f9d"/>
+  <path d="M350 245Q371 251 390 266" fill="none" stroke="#74bdc0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Neck and head -->
+  <path d="M399 240
+           Q394 207 408 178
+           Q420 157 440 151
+           Q452 161 446 176
+           Q426 189 427 222
+           L430 249Z"
+        fill="#fffdf5" stroke="#d5e2e3" stroke-width="3"/>
+  <circle cx="443" cy="151" r="24" fill="#fffdf5" stroke="#d5e2e3" stroke-width="3"/>
+  <circle cx="451" cy="146" r="3.5" fill="#263d50"/>
+  <circle cx="452" cy="145" r="1" fill="#fff"/>
+
+  <!-- Big bill and pouch -->
+  <path d="M459 148
+           Q517 146 584 164
+           Q591 167 583 172
+           Q535 182 483 177
+           Q467 172 459 158Z"
+        fill="#f59a3e" stroke="#d97732" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M469 161
+           Q514 176 580 170
+           Q561 193 518 197
+           Q486 193 469 161Z"
+        fill="#ed7655" stroke="#d97732" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M478 163Q521 177 572 171" fill="none" stroke="#ffd078" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- A little tail -->
+  <path d="M324 244L299 231Q305 252 322 260Z" fill="#fffdf5" stroke="#d5e2e3" stroke-width="3"/>
+</svg>

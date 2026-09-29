@@ -61,7 +61,13 @@ const MODELS = [
     'anthropic/claude-fable-5.1',
     'tencent/hy4-preview',
     'deepseek/deepseek-v4-flash-0731',
-    'deepseek/deepseek-v4.1-flash'
+    'deepseek/deepseek-v4.1-flash',
+    'stealth/space-bunny-alpha',
+    'anthropic/claude-sonnet-5.5',
+    'openai/gpt-6-luna',
+    'openai/gpt-6-sol',
+    'openai/gpt-5.6-sol'
+
 ];
 
 // Ensure output directory exists

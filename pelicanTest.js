@@ -67,7 +67,9 @@ const MODELS = [
     'openai/gpt-6-luna',
     'openai/gpt-6-sol',
     'openai/gpt-5.6-sol',
-    'openai/gpt-6.1-sol'
+    'openai/gpt-6.1-sol',
+    'z-ai/glm-5.3-flash',
+    'xiaomi/mimo-v2.6-flash'
 
 ];
 

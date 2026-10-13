@@ -71,7 +71,8 @@ const MODELS = [
     'z-ai/glm-5.3-flash',
     'xiaomi/mimo-v2.6-flash',
     'anthropic/claude-haiku-5.5',
-    'mistralai/mistral-large-4-0'
+    'mistralai/mistral-large-4-0',
+    'google/gemini-4-argon'
 ];
 
 // Ensure output directory exists

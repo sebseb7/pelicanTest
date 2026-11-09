@@ -72,7 +72,14 @@ const MODELS = [
     'xiaomi/mimo-v2.6-flash',
     'anthropic/claude-haiku-5.5',
     'mistralai/mistral-large-4-0',
-    'google/gemini-4-argon'
+    'google/gemini-4-argon',
+    'openai/gpt-6.1-terra',
+    'anthropic/claude-fable-5.2',
+    'tencent/hy4',
+    'moonshotai/kimi-k3.1-pro',
+    'minimax/minimax-m3.1-flash',
+    'deepseek/deepseek-v4.1-flash-1017',
+    'meta/muse-spark-open'
 ];
 
 // Ensure output directory exists

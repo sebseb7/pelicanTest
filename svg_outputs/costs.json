@@ -64,5 +64,8 @@
   "tencent/hy4": 0.0107505535,
   "openai/gpt-6.1-terra": 0.00631,
   "moonshotai/kimi-k3.1-pro": 0.081104,
-  "minimax/minimax-m3.1-flash": 0.0029644275
+  "minimax/minimax-m3.1-flash": 0.0029644275,
+  "deepseek/deepseek-v4.1-flash-1017": 0.00513745,
+  "meta/muse-spark-open": 0.01389395,
+  "google/gemini-4-hydrogen": 0.044046
 }

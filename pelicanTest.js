@@ -79,7 +79,8 @@ const MODELS = [
     'moonshotai/kimi-k3.1-pro',
     'minimax/minimax-m3.1-flash',
     'deepseek/deepseek-v4.1-flash-1017',
-    'meta/muse-spark-open'
+    'meta/muse-spark-open',
+    'google/gemini-4-hydrogen'
 ];
 
 // Ensure output directory exists

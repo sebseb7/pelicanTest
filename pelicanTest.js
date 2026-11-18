@@ -81,7 +81,8 @@ const MODELS = [
     'deepseek/deepseek-v4.1-flash-1017',
     'meta/muse-spark-open',
     'google/gemini-4-hydrogen',
-    'tencent/hy4-flash'
+    'tencent/hy4-flash',
+    'google/gemini-4-neon',
 ];
 
 // Ensure output directory exists

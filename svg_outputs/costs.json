@@ -68,5 +68,6 @@
   "deepseek/deepseek-v4.1-flash-1017": 0.00513745,
   "meta/muse-spark-open": 0.01389395,
   "google/gemini-4-hydrogen": 0.044046,
-  "tencent/hy4-flash": 0.0013415605
+  "tencent/hy4-flash": 0.0013415605,
+  "google/gemini-4-neon": 0.123837
 }
